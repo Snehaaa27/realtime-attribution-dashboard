@@ -1,0 +1,22 @@
+name: 'realtime_attribution_dashboard'
+version: '1.0.0'
+config-version: 2
+
+profile: 'realtime_attribution'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  realtime_attribution_dashboard:
+    +materialized: view
+    staging:
+      +schema: staging
+      +materialized: view
+    intermediate:
+      +schema: intermediate
+      +materialized: view
+    mart:
+      +schema: mart
+      +materialized: table

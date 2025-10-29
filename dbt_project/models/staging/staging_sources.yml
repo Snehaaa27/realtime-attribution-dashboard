@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: dbt_sneha_staging
+    database: assessment-476418
+    schema: dbt_sneha_staging
+    tables:
+      - name: raw_events

@@ -1,0 +1,222 @@
+[0m16:24:58.903511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738e322bbcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738e3106c9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738e3106c940>]}
+
+
+============================== 16:24:58.906533 | 8561ee89-69dc-4ded-af32-32d8fe4bf67c ==============================
+[0m16:24:58.906533 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m16:24:58.906964 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'printer_width': '80', 'empty': 'False', 'static_parser': 'True', 'version_check': 'True', 'profiles_dir': '/home/sneha/.dbt', 'no_print': 'None', 'log_path': 'logs', 'quiet': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt run', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_format': 'default', 'target_path': 'None', 'cache_selected_only': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'write_json': 'True'}
+[0m16:24:58.907371 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m16:24:58.907977 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.054234523, "process_in_blocks": "0", "process_kernel_time": 0.058002, "process_mem_max_rss": "94736", "process_out_blocks": "16", "process_user_time": 0.974034}
+[0m16:24:58.908415 [debug] [MainThread]: Command `dbt run` failed at 16:24:58.908347 after 0.05 seconds
+[0m16:24:58.908706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738e322bbcd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738e3106d0f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x738e3106c940>]}
+[0m16:24:58.909076 [debug] [MainThread]: Flushing usage events
+[0m16:24:59.853115 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:29.204880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7929192b3d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x792918060220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7929180601c0>]}
+
+
+============================== 16:25:29.207291 | 06edc12a-8ea4-4fb6-8bba-412405f3ee18 ==============================
+[0m16:25:29.207291 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m16:25:29.207695 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt debug', 'warn_error': 'None', 'profiles_dir': '/home/sneha/.dbt', 'partial_parse': 'True', 'empty': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'fail_fast': 'False', 'write_json': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'version_check': 'True', 'no_print': 'None', 'log_cache_events': 'False', 'log_path': 'logs', 'debug': 'False', 'quiet': 'False', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False'}
+[0m16:25:29.214751 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m16:25:29.215172 [info ] [MainThread]: python version: 3.10.12
+[0m16:25:29.215477 [info ] [MainThread]: python path: /usr/bin/python3
+[0m16:25:29.215744 [info ] [MainThread]: os info: Linux-6.8.0-85-generic-x86_64-with-glibc2.35
+[0m16:25:30.681999 [info ] [MainThread]: Using profiles dir at /home/sneha/.dbt
+[0m16:25:30.682478 [info ] [MainThread]: Using profiles.yml file at /home/sneha/.dbt/profiles.yml
+[0m16:25:30.682774 [info ] [MainThread]: Using dbt_project.yml file at /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project.yml
+[0m16:25:30.683067 [info ] [MainThread]: adapter type: bigquery
+[0m16:25:30.683316 [info ] [MainThread]: adapter version: 1.10.2
+[0m16:25:30.683562 [info ] [MainThread]: Configuration:
+[0m16:25:30.683806 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:25:30.684045 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:25:30.684270 [info ] [MainThread]: Required dependencies:
+[0m16:25:30.684512 [debug] [MainThread]: Executing "git --help"
+[0m16:25:30.686337 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:25:30.686887 [debug] [MainThread]: STDERR: "b''"
+[0m16:25:30.687308 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:25:30.687721 [info ] [MainThread]: Connection:
+[0m16:25:30.688282 [info ] [MainThread]:   method: oauth
+[0m16:25:30.688589 [info ] [MainThread]:   database: assessment-476418
+[0m16:25:30.688836 [info ] [MainThread]:   execution_project: assessment-476418
+[0m16:25:30.689087 [info ] [MainThread]:   schema: dbt_sneha
+[0m16:25:30.689366 [info ] [MainThread]:   location: US
+[0m16:25:30.689613 [info ] [MainThread]:   priority: interactive
+[0m16:25:30.689889 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m16:25:30.690155 [info ] [MainThread]:   impersonate_service_account: None
+[0m16:25:30.690414 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m16:25:30.690649 [info ] [MainThread]:   job_retries: 1
+[0m16:25:30.690880 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m16:25:30.691125 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m16:25:30.691359 [info ] [MainThread]:   timeout_seconds: 300
+[0m16:25:30.691582 [info ] [MainThread]:   client_id: None
+[0m16:25:30.691803 [info ] [MainThread]:   token_uri: None
+[0m16:25:30.692057 [info ] [MainThread]:   compute_region: None
+[0m16:25:30.692314 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m16:25:30.692553 [info ] [MainThread]:   gcs_bucket: None
+[0m16:25:30.692778 [info ] [MainThread]:   dataproc_batch: None
+[0m16:25:30.693178 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m16:25:30.840635 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m16:25:30.841099 [debug] [MainThread]: On debug: select 1 as id
+[0m16:25:30.841437 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:25:43.019505 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'Runtime Error
+  Failed to authenticate with supplied credentials
+  error:
+  Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.'
+[0m16:25:43.021231 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m16:25:43.022385 [debug] [MainThread]: BigQuery adapter: Database Error
+  Runtime Error
+    Failed to authenticate with supplied credentials
+    error:
+    Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[0m16:25:43.023365 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:25:43.024494 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:25:43.024788 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/sneha/Desktop/realtime-attribution-dashboard/dbt_project.yml> not found
+
+[0m16:25:43.025042 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:25:43.026470 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 13.865598, "process_in_blocks": "0", "process_kernel_time": 0.88347, "process_mem_max_rss": "338072", "process_out_blocks": "24", "process_user_time": 2.898385}
+[0m16:25:43.028372 [debug] [MainThread]: Command `dbt debug` failed at 16:25:43.028043 after 13.87 seconds
+[0m16:25:43.029469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7929192b3d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7928e5b9b040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7928e5b9a8f0>]}
+[0m16:25:43.031201 [debug] [MainThread]: Flushing usage events
+[0m16:25:43.987687 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:50:17.292546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x708428fabc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x708427df4280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x708427df4220>]}
+
+
+============================== 21:50:17.294935 | 23f40d15-09d9-4492-8576-9e58072ef79c ==============================
+[0m21:50:17.294935 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m21:50:17.295358 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'debug': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'target_path': 'None', 'write_json': 'True', 'log_format': 'default', 'log_path': 'logs', 'quiet': 'False', 'empty': 'None', 'partial_parse': 'True', 'static_parser': 'True', 'no_print': 'None', 'profiles_dir': '/home/sneha/.dbt', 'warn_error': 'None', 'introspect': 'True', 'indirect_selection': 'eager'}
+[0m21:50:17.306798 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m21:50:17.307349 [info ] [MainThread]: python version: 3.10.12
+[0m21:50:17.307799 [info ] [MainThread]: python path: /usr/bin/python3
+[0m21:50:17.308344 [info ] [MainThread]: os info: Linux-6.8.0-85-generic-x86_64-with-glibc2.35
+[0m21:50:19.170192 [info ] [MainThread]: Using profiles dir at /home/sneha/.dbt
+[0m21:50:19.170608 [info ] [MainThread]: Using profiles.yml file at /home/sneha/.dbt/profiles.yml
+[0m21:50:19.170869 [info ] [MainThread]: Using dbt_project.yml file at /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project.yml
+[0m21:50:19.171128 [info ] [MainThread]: adapter type: bigquery
+[0m21:50:19.171363 [info ] [MainThread]: adapter version: 1.10.2
+[0m21:50:19.171588 [info ] [MainThread]: Configuration:
+[0m21:50:19.171798 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:50:19.172003 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:50:19.172204 [info ] [MainThread]: Required dependencies:
+[0m21:50:19.172429 [debug] [MainThread]: Executing "git --help"
+[0m21:50:19.173927 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:50:19.174281 [debug] [MainThread]: STDERR: "b''"
+[0m21:50:19.174519 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:50:19.174751 [info ] [MainThread]: Connection:
+[0m21:50:19.174978 [info ] [MainThread]:   method: oauth
+[0m21:50:19.175187 [info ] [MainThread]:   database: assessment-476418
+[0m21:50:19.175422 [info ] [MainThread]:   execution_project: assessment-476418
+[0m21:50:19.175634 [info ] [MainThread]:   schema: dbt_sneha
+[0m21:50:19.175855 [info ] [MainThread]:   location: US
+[0m21:50:19.176080 [info ] [MainThread]:   priority: interactive
+[0m21:50:19.176310 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m21:50:19.176532 [info ] [MainThread]:   impersonate_service_account: None
+[0m21:50:19.176757 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m21:50:19.176987 [info ] [MainThread]:   job_retries: 1
+[0m21:50:19.177218 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m21:50:19.177454 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m21:50:19.177678 [info ] [MainThread]:   timeout_seconds: 300
+[0m21:50:19.177891 [info ] [MainThread]:   client_id: None
+[0m21:50:19.178106 [info ] [MainThread]:   token_uri: None
+[0m21:50:19.178473 [info ] [MainThread]:   compute_region: None
+[0m21:50:19.178917 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m21:50:19.179366 [info ] [MainThread]:   gcs_bucket: None
+[0m21:50:19.179644 [info ] [MainThread]:   dataproc_batch: None
+[0m21:50:19.180006 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m21:50:19.336104 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m21:50:19.336694 [debug] [MainThread]: On debug: select 1 as id
+[0m21:50:19.337134 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:50:31.499604 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'Runtime Error
+  Failed to authenticate with supplied credentials
+  error:
+  Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.'
+[0m21:50:31.500696 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m21:50:31.501394 [debug] [MainThread]: BigQuery adapter: Database Error
+  Runtime Error
+    Failed to authenticate with supplied credentials
+    error:
+    Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[0m21:50:31.502047 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:50:31.502789 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m21:50:31.503417 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/sneha/Desktop/realtime-attribution-dashboard/dbt_project.yml> not found
+
+[0m21:50:31.503972 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:50:31.513791 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 14.259429, "process_in_blocks": "349216", "process_kernel_time": 0.980483, "process_mem_max_rss": "336804", "process_out_blocks": "24", "process_user_time": 2.669315}
+[0m21:50:31.514986 [debug] [MainThread]: Command `dbt debug` failed at 21:50:31.514795 after 14.26 seconds
+[0m21:50:31.515679 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x708428fabc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7083f595f5b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7083f595ee90>]}
+[0m21:50:31.516163 [debug] [MainThread]: Flushing usage events
+[0m21:50:32.607847 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:40:21.089785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7771902bbd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77718f06ca60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77718f06ca00>]}
+
+
+============================== 13:40:21.093332 | 8c10982e-b678-482c-b9ca-300f6c2b2c2f ==============================
+[0m13:40:21.093332 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m13:40:21.093720 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'partial_parse': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'write_json': 'True', 'profiles_dir': '/home/sneha/.dbt', 'indirect_selection': 'eager', 'empty': 'False', 'static_parser': 'True', 'introspect': 'True', 'use_colors': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run'}
+[0m13:40:21.094079 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:40:21.094832 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.04591627, "process_in_blocks": "33600", "process_kernel_time": 0.052129, "process_mem_max_rss": "94252", "process_out_blocks": "16", "process_user_time": 0.822036}
+[0m13:40:21.095223 [debug] [MainThread]: Command `dbt run` failed at 13:40:21.095159 after 0.05 seconds
+[0m13:40:21.095520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7771902bbd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77718f06d180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77718f06ca00>]}
+[0m13:40:21.095809 [debug] [MainThread]: Flushing usage events
+[0m13:40:22.345484 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:40:23.325654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4a263b7d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4a25160250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4a251601f0>]}
+
+
+============================== 13:40:23.328679 | 7222d584-9ead-41a3-b501-29f4f7c7ebc2 ==============================
+[0m13:40:23.328679 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m13:40:23.329350 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'version_check': 'True', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'write_json': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'introspect': 'True', 'log_path': 'logs', 'no_print': 'None', 'debug': 'False', 'profiles_dir': '/home/sneha/.dbt', 'invocation_command': 'dbt test', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'log_format': 'default', 'quiet': 'False', 'empty': 'None', 'target_path': 'None', 'use_colors': 'True'}
+[0m13:40:23.329974 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:40:23.330930 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.043836348, "process_in_blocks": "0", "process_kernel_time": 0.041013, "process_mem_max_rss": "94992", "process_out_blocks": "0", "process_user_time": 0.798254}
+[0m13:40:23.331586 [debug] [MainThread]: Command `dbt test` failed at 13:40:23.331476 after 0.04 seconds
+[0m13:40:23.332021 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4a263b7d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4a25160970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4a251601f0>]}
+[0m13:40:23.332470 [debug] [MainThread]: Flushing usage events
+[0m13:40:24.422529 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:40:25.384850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x751028f9bd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x751027d40250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x751027d401f0>]}
+
+
+============================== 13:40:25.386791 | 09946e3c-2ce7-42b1-a617-9e4dcb8e8eac ==============================
+[0m13:40:25.386791 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m13:40:25.387160 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt docs generate', 'indirect_selection': 'eager', 'write_json': 'True', 'no_print': 'None', 'quiet': 'False', 'printer_width': '80', 'fail_fast': 'False', 'debug': 'False', 'version_check': 'True', 'introspect': 'True', 'log_format': 'default', 'empty': 'None', 'profiles_dir': '/home/sneha/.dbt', 'use_colors': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'cache_selected_only': 'False', 'log_path': 'logs'}
+[0m13:40:25.387547 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:40:25.388094 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 0.040724926, "process_in_blocks": "0", "process_kernel_time": 0.050007, "process_mem_max_rss": "95208", "process_out_blocks": "0", "process_user_time": 0.777119}
+[0m13:40:25.388559 [debug] [MainThread]: Command `dbt docs generate` failed at 13:40:25.388492 after 0.04 seconds
+[0m13:40:25.388809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x751028f9bd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x751027d40970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x751027d40250>]}
+[0m13:40:25.389074 [debug] [MainThread]: Flushing usage events
+[0m13:40:26.417750 [debug] [MainThread]: An error was encountered while trying to flush usage events

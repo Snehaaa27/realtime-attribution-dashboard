@@ -1,0 +1,2053 @@
+[0m16:14:26.307461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79aba95ab850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79aba8348220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79aba83481c0>]}
+
+
+============================== 16:14:26.310690 | 091a96f1-cfad-4dbb-a47c-3f812b5eec68 ==============================
+[0m16:14:26.310690 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m16:14:26.311035 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'write_json': 'True', 'static_parser': 'True', 'partial_parse': 'True', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'printer_width': '80', 'debug': 'False', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'log_path': 'logs', 'introspect': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init realtime_attribution', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'profiles_dir': '/home/sneha/.dbt', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'empty': 'None'}
+[0m16:14:26.316007 [info ] [MainThread]: Creating dbt configuration folder at /home/sneha/.dbt
+[0m16:14:26.317577 [debug] [MainThread]: Starter project path: /home/sneha/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m16:14:26.318616 [info ] [MainThread]: 
+Your new dbt project "realtime_attribution" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:14:26.318858 [info ] [MainThread]: Setting up your profile.
+[0m16:16:31.650114 [info ] [MainThread]: Profile realtime_attribution written to /home/sneha/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:16:31.661238 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 125.39477, "process_in_blocks": "3048", "process_kernel_time": 0.857131, "process_mem_max_rss": "335960", "process_out_blocks": "80", "process_user_time": 2.532434}
+[0m16:16:31.662714 [debug] [MainThread]: Command `dbt init` succeeded at 16:16:31.662452 after 125.40 seconds
+[0m16:16:31.663519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79aba95ab850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79ab75fd5750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x79ab75fd7a30>]}
+[0m16:16:31.664300 [debug] [MainThread]: Flushing usage events
+[0m16:16:32.761050 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:52:17.742835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f3b19b7ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f3b075c220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f3b075c1c0>]}
+
+
+============================== 21:52:17.754465 | 325fe8e0-6b1d-42b6-9c5e-caa4b2162307 ==============================
+[0m21:52:17.754465 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m21:52:17.754890 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'version_check': 'True', 'introspect': 'True', 'log_format': 'default', 'warn_error': 'None', 'invocation_command': 'dbt debug', 'profiles_dir': '/home/sneha/.dbt', 'printer_width': '80', 'cache_selected_only': 'False', 'debug': 'False', 'no_print': 'None', 'indirect_selection': 'eager', 'static_parser': 'True', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'empty': 'None', 'write_json': 'True'}
+[0m21:52:17.759944 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m21:52:17.760263 [info ] [MainThread]: python version: 3.10.12
+[0m21:52:17.760516 [info ] [MainThread]: python path: /usr/bin/python3
+[0m21:52:17.760745 [info ] [MainThread]: os info: Linux-6.8.0-85-generic-x86_64-with-glibc2.35
+[0m21:52:19.037680 [info ] [MainThread]: Using profiles dir at /home/sneha/.dbt
+[0m21:52:19.038096 [info ] [MainThread]: Using profiles.yml file at /home/sneha/.dbt/profiles.yml
+[0m21:52:19.038394 [info ] [MainThread]: Using dbt_project.yml file at /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/dbt_project.yml
+[0m21:52:19.038730 [info ] [MainThread]: adapter type: bigquery
+[0m21:52:19.038944 [info ] [MainThread]: adapter version: 1.10.2
+[0m21:52:19.120152 [info ] [MainThread]: Configuration:
+[0m21:52:19.120559 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:52:19.120820 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m21:52:19.121042 [info ] [MainThread]: Required dependencies:
+[0m21:52:19.121301 [debug] [MainThread]: Executing "git --help"
+[0m21:52:19.122884 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:52:19.123229 [debug] [MainThread]: STDERR: "b''"
+[0m21:52:19.123478 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:52:19.123722 [info ] [MainThread]: Connection:
+[0m21:52:19.123967 [info ] [MainThread]:   method: oauth
+[0m21:52:19.124192 [info ] [MainThread]:   database: assessment-476418
+[0m21:52:19.124404 [info ] [MainThread]:   execution_project: assessment-476418
+[0m21:52:19.124616 [info ] [MainThread]:   schema: dbt_sneha
+[0m21:52:19.124827 [info ] [MainThread]:   location: US
+[0m21:52:19.125038 [info ] [MainThread]:   priority: interactive
+[0m21:52:19.125256 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m21:52:19.125473 [info ] [MainThread]:   impersonate_service_account: None
+[0m21:52:19.125695 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m21:52:19.125913 [info ] [MainThread]:   job_retries: 1
+[0m21:52:19.126129 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m21:52:19.126366 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m21:52:19.126584 [info ] [MainThread]:   timeout_seconds: 300
+[0m21:52:19.126795 [info ] [MainThread]:   client_id: None
+[0m21:52:19.127005 [info ] [MainThread]:   token_uri: None
+[0m21:52:19.127217 [info ] [MainThread]:   compute_region: None
+[0m21:52:19.127437 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m21:52:19.127645 [info ] [MainThread]:   gcs_bucket: None
+[0m21:52:19.127853 [info ] [MainThread]:   dataproc_batch: None
+[0m21:52:19.128204 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m21:52:19.270216 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m21:52:19.270623 [debug] [MainThread]: On debug: select 1 as id
+[0m21:52:19.270885 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:52:31.408778 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'Runtime Error
+  Failed to authenticate with supplied credentials
+  error:
+  Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.'
+[0m21:52:31.410574 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m21:52:31.411631 [debug] [MainThread]: BigQuery adapter: Database Error
+  Runtime Error
+    Failed to authenticate with supplied credentials
+    error:
+    Your default credentials were not found. To set up Application Default Credentials, see https://cloud.google.com/docs/authentication/external/set-up-adc for more information.
+[0m21:52:31.412558 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m21:52:31.413324 [info ] [MainThread]: [31m1 check failed:[0m
+[0m21:52:31.413546 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m21:52:31.414414 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 13.710081, "process_in_blocks": "8", "process_kernel_time": 0.895817, "process_mem_max_rss": "339148", "process_out_blocks": "24", "process_user_time": 2.610467}
+[0m21:52:31.414826 [debug] [MainThread]: Command `dbt debug` failed at 21:52:31.414760 after 13.71 seconds
+[0m21:52:31.415107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f3b19b7ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f37e294610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76f37e294d60>]}
+[0m21:52:31.415419 [debug] [MainThread]: Flushing usage events
+[0m21:52:32.532281 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:00:42.167743 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d12dfdabd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d12deb541f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d12deb54190>]}
+
+
+============================== 22:00:42.170806 | 1e035b72-1f46-49c6-a320-910f8acd611c ==============================
+[0m22:00:42.170806 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m22:00:42.171471 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'printer_width': '80', 'debug': 'False', 'version_check': 'True', 'write_json': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'empty': 'None', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'target_path': 'None', 'introspect': 'True', 'cache_selected_only': 'False', 'static_parser': 'True', 'use_colors': 'True', 'profiles_dir': '/home/sneha/.dbt', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'no_print': 'None', 'log_cache_events': 'False', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m22:00:42.176909 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m22:00:42.177219 [info ] [MainThread]: python version: 3.10.12
+[0m22:00:42.177604 [info ] [MainThread]: python path: /usr/bin/python3
+[0m22:00:42.177963 [info ] [MainThread]: os info: Linux-6.8.0-85-generic-x86_64-with-glibc2.35
+[0m22:00:43.464725 [info ] [MainThread]: Using profiles dir at /home/sneha/.dbt
+[0m22:00:43.465100 [info ] [MainThread]: Using profiles.yml file at /home/sneha/.dbt/profiles.yml
+[0m22:00:43.465367 [info ] [MainThread]: Using dbt_project.yml file at /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/dbt_project.yml
+[0m22:00:43.465613 [info ] [MainThread]: adapter type: bigquery
+[0m22:00:43.465819 [info ] [MainThread]: adapter version: 1.10.2
+[0m22:00:43.551054 [info ] [MainThread]: Configuration:
+[0m22:00:43.551512 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:00:43.551755 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:00:43.551978 [info ] [MainThread]: Required dependencies:
+[0m22:00:43.552222 [debug] [MainThread]: Executing "git --help"
+[0m22:00:43.553921 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:00:43.554287 [debug] [MainThread]: STDERR: "b''"
+[0m22:00:43.554535 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:00:43.554772 [info ] [MainThread]: Connection:
+[0m22:00:43.555012 [info ] [MainThread]:   method: oauth
+[0m22:00:43.555226 [info ] [MainThread]:   database: assessment-476418
+[0m22:00:43.555466 [info ] [MainThread]:   execution_project: assessment-476418
+[0m22:00:43.555673 [info ] [MainThread]:   schema: dbt_sneha
+[0m22:00:43.555876 [info ] [MainThread]:   location: US
+[0m22:00:43.556085 [info ] [MainThread]:   priority: interactive
+[0m22:00:43.556309 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m22:00:43.556523 [info ] [MainThread]:   impersonate_service_account: None
+[0m22:00:43.556756 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m22:00:43.556982 [info ] [MainThread]:   job_retries: 1
+[0m22:00:43.557207 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m22:00:43.557449 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m22:00:43.557687 [info ] [MainThread]:   timeout_seconds: 300
+[0m22:00:43.557924 [info ] [MainThread]:   client_id: None
+[0m22:00:43.558149 [info ] [MainThread]:   token_uri: None
+[0m22:00:43.558393 [info ] [MainThread]:   compute_region: None
+[0m22:00:43.558621 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m22:00:43.558840 [info ] [MainThread]:   gcs_bucket: None
+[0m22:00:43.559063 [info ] [MainThread]:   dataproc_batch: None
+[0m22:00:43.559430 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m22:00:43.686395 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m22:00:43.686782 [debug] [MainThread]: On debug: select 1 as id
+[0m22:00:43.687079 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:00:45.843869 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:ac527cf1-72fb-4ae1-be11-56d66a2a7068&page=queryresults
+[0m22:00:46.905163 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:00:46.906684 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:00:46.908537 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 4.777609, "process_in_blocks": "2192", "process_kernel_time": 0.87859, "process_mem_max_rss": "346932", "process_out_blocks": "32", "process_user_time": 2.775866}
+[0m22:00:46.909559 [debug] [MainThread]: Command `dbt debug` succeeded at 22:00:46.909399 after 4.78 seconds
+[0m22:00:46.910124 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:00:46.910684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d12dfdabd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d12ac5cfdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d12ac5cec20>]}
+[0m22:00:46.911230 [debug] [MainThread]: Flushing usage events
+[0m22:00:48.331003 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m22:01:19.937629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7637612abd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7637601009a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x763760100940>]}
+
+
+============================== 22:01:19.940646 | 240002a4-b989-4ac5-8e58-572ded634bab ==============================
+[0m22:01:19.940646 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m22:01:19.941355 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'use_colors': 'True', 'printer_width': '80', 'invocation_command': 'dbt run', 'write_json': 'True', 'partial_parse': 'True', 'profiles_dir': '/home/sneha/.dbt', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'version_check': 'True', 'quiet': 'False', 'debug': 'False', 'log_cache_events': 'False', 'static_parser': 'True', 'warn_error': 'None', 'log_format': 'default', 'cache_selected_only': 'False', 'no_print': 'None', 'indirect_selection': 'eager', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'target_path': 'None'}
+[0m22:01:21.340258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '240002a4-b989-4ac5-8e58-572ded634bab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76372d9bb910>]}
+[0m22:01:21.384032 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '240002a4-b989-4ac5-8e58-572ded634bab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7637609690f0>]}
+[0m22:01:21.384627 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m22:01:21.524679 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m22:01:21.525218 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:01:21.525545 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '240002a4-b989-4ac5-8e58-572ded634bab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76372d9f8670>]}
+[0m22:01:22.222380 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.realtime_attribution_dashboard.stg_ga4_events' (models/staging/stg_ga4_events.sql) depends on a source named 'dbt_sneha.stg_ga4_events' which was not found
+[0m22:01:22.223199 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.3233547, "process_in_blocks": "3384", "process_kernel_time": 0.892619, "process_mem_max_rss": "347420", "process_out_blocks": "16", "process_user_time": 3.313724}
+[0m22:01:22.223671 [debug] [MainThread]: Command `dbt run` failed at 22:01:22.223600 after 2.32 seconds
+[0m22:01:22.223958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7637612abd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76372d5689d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76372d5696c0>]}
+[0m22:01:22.224247 [debug] [MainThread]: Flushing usage events
+[0m22:01:23.504824 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:03:29.905051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777422f9bd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777421d489a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777421d48940>]}
+
+
+============================== 23:03:29.907070 | 77977df5-6886-4b01-af91-1ccfa4e3ad92 ==============================
+[0m23:03:29.907070 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m23:03:29.907515 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'warn_error': 'None', 'debug': 'False', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'empty': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'quiet': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'printer_width': '80', 'fail_fast': 'False', 'cache_selected_only': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'static_parser': 'True', 'no_print': 'None', 'log_format': 'default', 'profiles_dir': '/home/sneha/.dbt'}
+[0m23:03:31.275839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '77977df5-6886-4b01-af91-1ccfa4e3ad92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7773ef70b910>]}
+[0m23:03:31.317986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '77977df5-6886-4b01-af91-1ccfa4e3ad92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7774225b10f0>]}
+[0m23:03:31.318581 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m23:03:31.445578 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m23:03:31.446087 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:03:31.446400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '77977df5-6886-4b01-af91-1ccfa4e3ad92', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7773ef748670>]}
+[0m23:03:32.075346 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.realtime_attribution_dashboard.stg_ga4_events' (models/staging/stg_ga4_events.sql) depends on a source named 'dbt_sneha.stg_ga4_events' which was not found
+[0m23:03:32.076108 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.2078123, "process_in_blocks": "0", "process_kernel_time": 0.90264, "process_mem_max_rss": "347300", "process_out_blocks": "16", "process_user_time": 3.269698}
+[0m23:03:32.076570 [debug] [MainThread]: Command `dbt run` failed at 23:03:32.076500 after 2.21 seconds
+[0m23:03:32.076851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x777422f9bd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7773ef2a4c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7773ef2a4a60>]}
+[0m23:03:32.077159 [debug] [MainThread]: Flushing usage events
+[0m23:03:33.185711 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:05:22.437692 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77926569fca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77926451c940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77926451c8e0>]}
+
+
+============================== 23:05:22.439858 | 681139d2-c61a-44a1-9890-110bc7da47a0 ==============================
+[0m23:05:22.439858 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m23:05:22.440248 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/sneha/.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'log_format': 'default', 'no_print': 'None', 'version_check': 'True', 'static_parser': 'True', 'introspect': 'True', 'fail_fast': 'False', 'warn_error': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'target_path': 'None', 'partial_parse': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'empty': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'invocation_command': 'dbt run'}
+[0m23:05:23.825474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '681139d2-c61a-44a1-9890-110bc7da47a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x779266f3b9a0>]}
+[0m23:05:23.869336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '681139d2-c61a-44a1-9890-110bc7da47a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x779264db7250>]}
+[0m23:05:23.869878 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m23:05:23.992644 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m23:05:23.993156 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:05:23.993485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '681139d2-c61a-44a1-9890-110bc7da47a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7792320f1570>]}
+[0m23:05:24.765630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '681139d2-c61a-44a1-9890-110bc7da47a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7791fff3ded0>]}
+[0m23:05:24.814399 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:05:24.816573 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:05:24.824825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '681139d2-c61a-44a1-9890-110bc7da47a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7791fff309a0>]}
+[0m23:05:24.825231 [info ] [MainThread]: Found 4 models, 1 source, 508 macros
+[0m23:05:24.825522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '681139d2-c61a-44a1-9890-110bc7da47a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7791fff305b0>]}
+[0m23:05:24.826706 [info ] [MainThread]: 
+[0m23:05:24.827021 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:05:24.827281 [info ] [MainThread]: 
+[0m23:05:24.827662 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:05:24.831149 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:05:24.831919 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:05:24.832642 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:05:24.833288 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:05:24.833912 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:05:24.834685 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:05:26.553158 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now create_assessment-476418_dbt_sneha_staging)
+[0m23:05:26.554572 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now create_assessment-476418_dbt_sneha_mart)
+[0m23:05:26.555042 [debug] [ThreadPool]: Creating schema "database: "assessment-476418"
+schema: "dbt_sneha_staging"
+"
+[0m23:05:26.557173 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now create_assessment-476418_dbt_sneha_intermediate)
+[0m23:05:26.558534 [debug] [ThreadPool]: Creating schema "database: "assessment-476418"
+schema: "dbt_sneha_mart"
+"
+[0m23:05:26.568637 [debug] [ThreadPool]: On create_assessment-476418_dbt_sneha_staging: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "connection_name": "create_assessment-476418_dbt_sneha_staging"} */
+create schema if not exists `assessment-476418`.`dbt_sneha_staging`
+  
+[0m23:05:26.569328 [debug] [ThreadPool]: Creating schema "database: "assessment-476418"
+schema: "dbt_sneha_intermediate"
+"
+[0m23:05:26.571136 [debug] [ThreadPool]: On create_assessment-476418_dbt_sneha_mart: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "connection_name": "create_assessment-476418_dbt_sneha_mart"} */
+create schema if not exists `assessment-476418`.`dbt_sneha_mart`
+  
+[0m23:05:26.571582 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:26.573667 [debug] [ThreadPool]: On create_assessment-476418_dbt_sneha_intermediate: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "connection_name": "create_assessment-476418_dbt_sneha_intermediate"} */
+create schema if not exists `assessment-476418`.`dbt_sneha_intermediate`
+  
+[0m23:05:26.574234 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:26.575810 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:27.675281 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:7b5ca633-fc6c-41d8-b84d-b9a416b26e2b&page=queryresults
+[0m23:05:27.680433 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:9126350e-2cd6-47bc-8e54-7581bfafe78c&page=queryresults
+[0m23:05:27.682942 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:4beef66d-94aa-43a1-913d-447bbe845d9b&page=queryresults
+[0m23:05:28.947523 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_assessment-476418_dbt_sneha_staging, now list_assessment-476418_dbt_sneha_staging)
+[0m23:05:28.948791 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:28.949953 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_assessment-476418_dbt_sneha_mart, now list_assessment-476418_dbt_sneha_mart)
+[0m23:05:28.953771 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_assessment-476418_dbt_sneha_intermediate, now list_assessment-476418_dbt_sneha_intermediate)
+[0m23:05:28.954842 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:28.955866 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:05:29.804395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '681139d2-c61a-44a1-9890-110bc7da47a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x779266cb7e50>]}
+[0m23:05:29.805862 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:05:29.822943 [debug] [Thread-1 (]: Began running node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:05:29.824875 [info ] [Thread-1 (]: 1 of 4 START sql view model dbt_sneha_staging.stg_ga4_events ................... [RUN]
+[0m23:05:29.826277 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_mart, now model.realtime_attribution_dashboard.stg_ga4_events)
+[0m23:05:29.827371 [debug] [Thread-1 (]: Began compiling node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:05:29.836837 [debug] [Thread-1 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.stg_ga4_events"
+[0m23:05:29.838739 [debug] [Thread-1 (]: Began executing node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:05:29.867860 [debug] [Thread-1 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.stg_ga4_events"
+[0m23:05:29.868960 [debug] [Thread-1 (]: On model.realtime_attribution_dashboard.stg_ga4_events: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.stg_ga4_events"} */
+
+
+  create or replace view `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+  OPTIONS()
+  as SELECT
+  event_id,
+  user_id,
+  event_name,
+  source,
+  medium,
+  campaign,
+  event_timestamp,
+  DATE(event_timestamp) AS event_date,
+  FORMAT_TIMESTAMP('%H', event_timestamp) AS event_hour
+FROM `assessment-476418`.`dbt_sneha`.`stg_ga4_events`
+WHERE event_name IS NOT NULL;
+
+
+[0m23:05:29.869611 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:05:30.816746 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:130996f6-0fd7-4e79-a3d9-2dbade5b4929&page=queryresults
+[0m23:05:31.292219 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:130996f6-0fd7-4e79-a3d9-2dbade5b4929&page=queryresults
+[0m23:05:31.317044 [debug] [Thread-1 (]: Database Error in model stg_ga4_events (models/staging/stg_ga4_events.sql)
+  No matching signature for function FORMAT_TIMESTAMP
+    Argument types: STRING, STRING
+    Signature: FORMAT_TIMESTAMP(STRING, TIMESTAMP, [STRING])
+      Argument 2: Unable to coerce type STRING to expected type TIMESTAMP
+    Signature: FORMAT_TIMESTAMP(STRING, DATETIME)
+      Argument 2: Unable to coerce type STRING to expected type DATETIME at [15:3]
+  compiled code at target/run/realtime_attribution_dashboard/models/staging/stg_ga4_events.sql
+[0m23:05:31.319912 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '681139d2-c61a-44a1-9890-110bc7da47a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7792659ec370>]}
+[0m23:05:31.320871 [error] [Thread-1 (]: 1 of 4 ERROR creating sql view model dbt_sneha_staging.stg_ga4_events .......... [[31mERROR[0m in 1.49s]
+[0m23:05:31.321734 [debug] [Thread-1 (]: Finished running node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:05:31.322546 [debug] [Thread-7 (]: Marking all children of 'model.realtime_attribution_dashboard.stg_ga4_events' to be skipped because of status 'error'.  Reason: Database Error in model stg_ga4_events (models/staging/stg_ga4_events.sql)
+  No matching signature for function FORMAT_TIMESTAMP
+    Argument types: STRING, STRING
+    Signature: FORMAT_TIMESTAMP(STRING, TIMESTAMP, [STRING])
+      Argument 2: Unable to coerce type STRING to expected type TIMESTAMP
+    Signature: FORMAT_TIMESTAMP(STRING, DATETIME)
+      Argument 2: Unable to coerce type STRING to expected type DATETIME at [15:3]
+  compiled code at target/run/realtime_attribution_dashboard/models/staging/stg_ga4_events.sql.
+[0m23:05:31.324621 [debug] [Thread-3 (]: Began running node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:05:31.326391 [info ] [Thread-3 (]: 2 of 4 SKIP relation dbt_sneha_intermediate.int_user_sessions .................. [[33mSKIP[0m]
+[0m23:05:31.327248 [debug] [Thread-3 (]: Finished running node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:05:31.325320 [debug] [Thread-4 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:05:31.325850 [debug] [Thread-2 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:05:31.327902 [info ] [Thread-4 (]: 3 of 4 SKIP relation dbt_sneha_mart.mart_attribution_first_click ............... [[33mSKIP[0m]
+[0m23:05:31.329080 [debug] [Thread-4 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:05:31.328456 [info ] [Thread-2 (]: 4 of 4 SKIP relation dbt_sneha_mart.mart_attribution_last_click ................ [[33mSKIP[0m]
+[0m23:05:31.329894 [debug] [Thread-2 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:05:31.331218 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:05:31.332134 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:05:31.332681 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.stg_ga4_events' was properly closed.
+[0m23:05:31.333197 [debug] [MainThread]: Connection 'list_assessment-476418_dbt_sneha_intermediate' was properly closed.
+[0m23:05:31.333703 [debug] [MainThread]: Connection 'list_assessment-476418_dbt_sneha_staging' was properly closed.
+[0m23:05:31.334328 [info ] [MainThread]: 
+[0m23:05:31.334893 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 6.51 seconds (6.51s).
+[0m23:05:31.335990 [debug] [MainThread]: Command end result
+[0m23:05:31.357624 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:05:31.359326 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:05:31.363989 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/run_results.json
+[0m23:05:31.364359 [info ] [MainThread]: 
+[0m23:05:31.364692 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m23:05:31.364995 [info ] [MainThread]: 
+[0m23:05:31.365320 [error] [MainThread]: [31mFailure in model stg_ga4_events (models/staging/stg_ga4_events.sql)[0m
+[0m23:05:31.365609 [error] [MainThread]:   Database Error in model stg_ga4_events (models/staging/stg_ga4_events.sql)
+  No matching signature for function FORMAT_TIMESTAMP
+    Argument types: STRING, STRING
+    Signature: FORMAT_TIMESTAMP(STRING, TIMESTAMP, [STRING])
+      Argument 2: Unable to coerce type STRING to expected type TIMESTAMP
+    Signature: FORMAT_TIMESTAMP(STRING, DATETIME)
+      Argument 2: Unable to coerce type STRING to expected type DATETIME at [15:3]
+  compiled code at target/run/realtime_attribution_dashboard/models/staging/stg_ga4_events.sql
+[0m23:05:31.365842 [info ] [MainThread]: 
+[0m23:05:31.366099 [info ] [MainThread]:   compiled code at target/compiled/realtime_attribution_dashboard/models/staging/stg_ga4_events.sql
+[0m23:05:31.366328 [info ] [MainThread]: 
+[0m23:05:31.366579 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=3 NO-OP=0 TOTAL=4
+[0m23:05:31.367289 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 8.966512, "process_in_blocks": "1344", "process_kernel_time": 0.966833, "process_mem_max_rss": "366788", "process_out_blocks": "3160", "process_user_time": 4.64958}
+[0m23:05:31.367730 [debug] [MainThread]: Command `dbt run` failed at 23:05:31.367653 after 8.97 seconds
+[0m23:05:31.368057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77926569fca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x779264d81db0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77926544fdc0>]}
+[0m23:05:31.368397 [debug] [MainThread]: Flushing usage events
+[0m23:05:32.619396 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:06:40.573042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d725a7d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d7135ca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d7135c9a0>]}
+
+
+============================== 23:06:40.576232 | 6b669e7d-84ff-4c86-b799-8cf90f624fa1 ==============================
+[0m23:06:40.576232 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m23:06:40.576947 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/sneha/.dbt', 'quiet': 'False', 'write_json': 'True', 'static_parser': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'empty': 'False', 'indirect_selection': 'eager', 'debug': 'False', 'warn_error': 'None', 'no_print': 'None', 'cache_selected_only': 'False', 'version_check': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'use_colors': 'True', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'log_cache_events': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m23:06:42.069809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6b669e7d-84ff-4c86-b799-8cf90f624fa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d73cfa800>]}
+[0m23:06:42.115633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6b669e7d-84ff-4c86-b799-8cf90f624fa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d3eda16f0>]}
+[0m23:06:42.116213 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m23:06:42.242350 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m23:06:42.318986 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m23:06:42.319475 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/staging/stg_ga4_events.sql
+[0m23:06:42.503213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6b669e7d-84ff-4c86-b799-8cf90f624fa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d3d143df0>]}
+[0m23:06:42.556337 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:06:42.557526 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:06:42.564438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6b669e7d-84ff-4c86-b799-8cf90f624fa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d3e908550>]}
+[0m23:06:42.564806 [info ] [MainThread]: Found 4 models, 1 source, 508 macros
+[0m23:06:42.565064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b669e7d-84ff-4c86-b799-8cf90f624fa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d3ea46920>]}
+[0m23:06:42.566186 [info ] [MainThread]: 
+[0m23:06:42.566512 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:06:42.566760 [info ] [MainThread]: 
+[0m23:06:42.567162 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:06:42.570435 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:06:42.571112 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:06:42.571766 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:06:42.572315 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:06:42.572858 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:06:42.573379 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:06:43.894350 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_staging)
+[0m23:06:43.897200 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_mart)
+[0m23:06:43.899389 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:06:43.901791 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_intermediate)
+[0m23:06:43.904049 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:06:43.909724 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:06:44.504424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b669e7d-84ff-4c86-b799-8cf90f624fa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d73a77d00>]}
+[0m23:06:44.505720 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:06:44.510491 [debug] [Thread-1 (]: Began running node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:06:44.511919 [info ] [Thread-1 (]: 1 of 4 START sql view model dbt_sneha_staging.stg_ga4_events ................... [RUN]
+[0m23:06:44.513122 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_staging, now model.realtime_attribution_dashboard.stg_ga4_events)
+[0m23:06:44.513918 [debug] [Thread-1 (]: Began compiling node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:06:44.522824 [debug] [Thread-1 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.stg_ga4_events"
+[0m23:06:44.524606 [debug] [Thread-1 (]: Began executing node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:06:44.560855 [debug] [Thread-1 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.stg_ga4_events"
+[0m23:06:44.561548 [debug] [Thread-1 (]: On model.realtime_attribution_dashboard.stg_ga4_events: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.stg_ga4_events"} */
+
+
+  create or replace view `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+  OPTIONS()
+  as SELECT
+  event_id,
+  user_id,
+  event_name,
+  source,
+  medium,
+  campaign,
+  event_timestamp,
+  DATE(event_timestamp) AS event_date,
+  FORMAT_TIMESTAMP('%H', TIMESTAMP(event_timestamp)) AS event_hour
+FROM `assessment-476418`.`dbt_sneha`.`stg_ga4_events`
+WHERE event_name IS NOT NULL;
+
+
+[0m23:06:44.561919 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:06:45.614521 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:04c604cf-687e-4985-8d1e-1a096979327c&page=queryresults
+[0m23:06:46.519622 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6b669e7d-84ff-4c86-b799-8cf90f624fa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d41dae230>]}
+[0m23:06:46.520231 [info ] [Thread-1 (]: 1 of 4 OK created sql view model dbt_sneha_staging.stg_ga4_events .............. [[32mCREATE VIEW (0 processed)[0m in 2.01s]
+[0m23:06:46.520743 [debug] [Thread-1 (]: Finished running node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:06:46.521781 [debug] [Thread-3 (]: Began running node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:06:46.522372 [debug] [Thread-4 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:06:46.522992 [debug] [Thread-2 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:06:46.523835 [info ] [Thread-3 (]: 2 of 4 START sql view model dbt_sneha_intermediate.int_user_sessions ........... [RUN]
+[0m23:06:46.524607 [info ] [Thread-4 (]: 3 of 4 START sql table model dbt_sneha_mart.mart_attribution_first_click ....... [RUN]
+[0m23:06:46.525359 [info ] [Thread-2 (]: 4 of 4 START sql table model dbt_sneha_mart.mart_attribution_last_click ........ [RUN]
+[0m23:06:46.526043 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_intermediate, now model.realtime_attribution_dashboard.int_user_sessions)
+[0m23:06:46.526927 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.realtime_attribution_dashboard.mart_attribution_first_click'
+[0m23:06:46.527621 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_mart, now model.realtime_attribution_dashboard.mart_attribution_last_click)
+[0m23:06:46.528351 [debug] [Thread-3 (]: Began compiling node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:06:46.529153 [debug] [Thread-4 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:06:46.529745 [debug] [Thread-2 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:06:46.533475 [debug] [Thread-3 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.int_user_sessions"
+[0m23:06:46.544830 [debug] [Thread-3 (]: Began executing node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:06:46.543944 [debug] [Thread-4 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_first_click"
+[0m23:06:46.543212 [debug] [Thread-2 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_last_click"
+[0m23:06:46.549457 [debug] [Thread-3 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.int_user_sessions"
+[0m23:06:46.550724 [debug] [Thread-3 (]: On model.realtime_attribution_dashboard.int_user_sessions: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.int_user_sessions"} */
+
+
+  create or replace view `assessment-476418`.`dbt_sneha_intermediate`.`int_user_sessions`
+  OPTIONS()
+  as -- int_user_sessions.sql
+-- Create user sessions per day
+
+SELECT
+  user_id,
+  event_date,
+  CONCAT(user_id, '_', event_date) AS session_id,
+  COUNT(DISTINCT event_name) AS event_count,
+  MIN(event_timestamp) AS session_start,
+  MAX(event_timestamp) AS session_end
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+GROUP BY 1,2;
+
+
+[0m23:06:46.551446 [debug] [Thread-2 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:06:46.552190 [debug] [Thread-4 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:06:46.552815 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m23:06:46.577515 [debug] [Thread-2 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.mart_attribution_last_click"
+[0m23:06:46.579963 [debug] [Thread-4 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.mart_attribution_first_click"
+[0m23:06:46.582150 [debug] [Thread-2 (]: On model.realtime_attribution_dashboard.mart_attribution_last_click: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.mart_attribution_last_click"} */
+
+  
+    
+
+    create or replace table `assessment-476418`.`dbt_sneha_mart`.`mart_attribution_last_click`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- mart_attribution_last_click.sql
+-- Compute Last-Click attribution
+
+SELECT
+  user_id,
+  MAX(event_timestamp) AS last_click_time,
+  ARRAY_AGG(source ORDER BY event_timestamp DESC LIMIT 1)[OFFSET(0)] AS last_source
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+WHERE event_name = 'page_view'
+GROUP BY user_id
+    );
+  
+[0m23:06:46.582545 [debug] [Thread-4 (]: On model.realtime_attribution_dashboard.mart_attribution_first_click: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.mart_attribution_first_click"} */
+
+  
+    
+
+    create or replace table `assessment-476418`.`dbt_sneha_mart`.`mart_attribution_first_click`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- mart_attribution_first_click.sql
+-- Compute First-Click attribution
+
+SELECT
+  user_id,
+  MIN(event_timestamp) AS first_click_time,
+  ARRAY_AGG(source ORDER BY event_timestamp ASC LIMIT 1)[OFFSET(0)] AS first_source
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+WHERE event_name = 'page_view'
+GROUP BY user_id
+    );
+  
+[0m23:06:46.583110 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:06:46.583533 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m23:06:47.628770 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:22952291-3f6f-4a77-85a2-d4e792dd94aa&page=queryresults
+[0m23:06:47.633184 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:068c27d8-9c9c-4531-be28-7fcc9d187a28&page=queryresults
+[0m23:06:47.645099 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:b9df7c66-5867-496b-86fd-3f9aa19e553a&page=queryresults
+[0m23:06:48.513709 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6b669e7d-84ff-4c86-b799-8cf90f624fa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d3d183a90>]}
+[0m23:06:48.514280 [info ] [Thread-3 (]: 2 of 4 OK created sql view model dbt_sneha_intermediate.int_user_sessions ...... [[32mCREATE VIEW (0 processed)[0m in 1.99s]
+[0m23:06:48.514740 [debug] [Thread-3 (]: Finished running node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:06:49.882205 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6b669e7d-84ff-4c86-b799-8cf90f624fa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d2cc3add0>]}
+[0m23:06:49.883250 [info ] [Thread-4 (]: 3 of 4 OK created sql table model dbt_sneha_mart.mart_attribution_first_click .. [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 3.35s]
+[0m23:06:49.883710 [debug] [Thread-4 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:06:49.897849 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6b669e7d-84ff-4c86-b799-8cf90f624fa1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d2d6a8f40>]}
+[0m23:06:49.898798 [info ] [Thread-2 (]: 4 of 4 OK created sql table model dbt_sneha_mart.mart_attribution_last_click ... [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 3.37s]
+[0m23:06:49.899463 [debug] [Thread-2 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:06:49.901427 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:06:49.902106 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:06:49.902462 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.stg_ga4_events' was properly closed.
+[0m23:06:49.902753 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_last_click' was properly closed.
+[0m23:06:49.903027 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.int_user_sessions' was properly closed.
+[0m23:06:49.903341 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_first_click' was properly closed.
+[0m23:06:49.904189 [info ] [MainThread]: 
+[0m23:06:49.905210 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 7.34 seconds (7.34s).
+[0m23:06:49.907696 [debug] [MainThread]: Command end result
+[0m23:06:49.932704 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:06:49.934964 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:06:49.943073 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/run_results.json
+[0m23:06:49.943635 [info ] [MainThread]: 
+[0m23:06:49.944195 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:06:49.944679 [info ] [MainThread]: 
+[0m23:06:49.945178 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m23:06:49.946308 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 9.41605, "process_in_blocks": "0", "process_kernel_time": 0.900668, "process_mem_max_rss": "367428", "process_out_blocks": "3224", "process_user_time": 4.264163}
+[0m23:06:49.947063 [debug] [MainThread]: Command `dbt run` succeeded at 23:06:49.946936 after 9.42 seconds
+[0m23:06:49.947597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d725a7d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d72263e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a9d73cfa800>]}
+[0m23:06:49.948125 [debug] [MainThread]: Flushing usage events
+[0m23:06:51.826038 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:16:49.967620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdee9ab3cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdee88649a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdee8864940>]}
+
+
+============================== 23:16:49.970670 | 34fdfbb1-0da2-4edc-9e69-92697638f07f ==============================
+[0m23:16:49.970670 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m23:16:49.971346 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'cache_selected_only': 'False', 'debug': 'False', 'printer_width': '80', 'quiet': 'False', 'log_format': 'default', 'version_check': 'True', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'write_json': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_cache_events': 'False', 'no_print': 'None', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'target_path': 'None', 'invocation_command': 'dbt run --select int_user_sessions+', 'profiles_dir': '/home/sneha/.dbt', 'empty': 'False', 'fail_fast': 'False'}
+[0m23:16:51.324758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '34fdfbb1-0da2-4edc-9e69-92697638f07f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdeb648f3a0>]}
+[0m23:16:51.369115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '34fdfbb1-0da2-4edc-9e69-92697638f07f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdee89e3700>]}
+[0m23:16:51.369712 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m23:16:51.493732 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m23:16:51.569044 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:16:51.569424 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:16:51.596364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '34fdfbb1-0da2-4edc-9e69-92697638f07f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdeb5e7d1b0>]}
+[0m23:16:51.651221 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:16:51.652401 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:16:51.659845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '34fdfbb1-0da2-4edc-9e69-92697638f07f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdeb5e276a0>]}
+[0m23:16:51.660323 [info ] [MainThread]: Found 4 models, 1 source, 508 macros
+[0m23:16:51.660632 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '34fdfbb1-0da2-4edc-9e69-92697638f07f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdeb5e24820>]}
+[0m23:16:51.661620 [info ] [MainThread]: 
+[0m23:16:51.661933 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:16:51.662183 [info ] [MainThread]: 
+[0m23:16:51.662638 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:16:51.663588 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:16:51.664095 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:16:53.025851 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_intermediate)
+[0m23:16:53.026846 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:16:53.030330 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418_dbt_sneha_mart'
+[0m23:16:53.031793 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418_dbt_sneha_staging'
+[0m23:16:53.032773 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:16:53.034127 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:16:53.699791 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '34fdfbb1-0da2-4edc-9e69-92697638f07f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdee9b93e20>]}
+[0m23:16:53.700933 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:16:53.705657 [debug] [Thread-1 (]: Began running node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:16:53.706988 [info ] [Thread-1 (]: 1 of 1 START sql view model dbt_sneha_intermediate.int_user_sessions ........... [RUN]
+[0m23:16:53.708116 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_mart, now model.realtime_attribution_dashboard.int_user_sessions)
+[0m23:16:53.708896 [debug] [Thread-1 (]: Began compiling node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:16:53.722275 [debug] [Thread-1 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.int_user_sessions"
+[0m23:16:53.723075 [debug] [Thread-1 (]: Began executing node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:16:53.747821 [debug] [Thread-1 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.int_user_sessions"
+[0m23:16:53.748522 [debug] [Thread-1 (]: On model.realtime_attribution_dashboard.int_user_sessions: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.int_user_sessions"} */
+
+
+  create or replace view `assessment-476418`.`dbt_sneha_intermediate`.`int_user_sessions`
+  OPTIONS()
+  as -- int_user_sessions.sql
+-- Create user sessions per day
+
+SELECT
+  user_id,
+  event_date,
+  CONCAT(user_id, '_', event_date) AS session_id,
+  COUNT(DISTINCT event_name) AS event_count,
+  MIN(event_timestamp) AS session_start,
+  MAX(event_timestamp) AS session_end
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+GROUP BY 1,2;
+
+
+[0m23:16:53.748888 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:16:54.804058 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:9605bbed-c660-4ffa-9b46-11006022b3d0&page=queryresults
+[0m23:16:55.667718 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '34fdfbb1-0da2-4edc-9e69-92697638f07f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdeb929e230>]}
+[0m23:16:55.668374 [info ] [Thread-1 (]: 1 of 1 OK created sql view model dbt_sneha_intermediate.int_user_sessions ...... [[32mCREATE VIEW (0 processed)[0m in 1.96s]
+[0m23:16:55.668874 [debug] [Thread-1 (]: Finished running node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:16:55.670412 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:16:55.670956 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:16:55.671226 [debug] [MainThread]: Connection 'list_assessment-476418_dbt_sneha_intermediate' was properly closed.
+[0m23:16:55.671462 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.int_user_sessions' was properly closed.
+[0m23:16:55.671665 [debug] [MainThread]: Connection 'list_assessment-476418_dbt_sneha_staging' was properly closed.
+[0m23:16:55.671893 [info ] [MainThread]: 
+[0m23:16:55.672168 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.01 seconds (4.01s).
+[0m23:16:55.672722 [debug] [MainThread]: Command end result
+[0m23:16:55.691526 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:16:55.693081 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:16:55.700539 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/run_results.json
+[0m23:16:55.701178 [info ] [MainThread]: 
+[0m23:16:55.701797 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:16:55.702230 [info ] [MainThread]: 
+[0m23:16:55.702689 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m23:16:55.703753 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 5.7731338, "process_in_blocks": "0", "process_kernel_time": 0.900465, "process_mem_max_rss": "357744", "process_out_blocks": "2104", "process_user_time": 3.323026}
+[0m23:16:55.704448 [debug] [MainThread]: Command `dbt run` succeeded at 23:16:55.704331 after 5.77 seconds
+[0m23:16:55.704925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdee9ab3cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdeb5e5e050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cdeb648f3a0>]}
+[0m23:16:55.705421 [debug] [MainThread]: Flushing usage events
+[0m23:16:56.913446 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:19:50.229341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f81d9fd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f80c1c9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f80c1c940>]}
+
+
+============================== 23:19:50.231209 | 087b0190-de6b-4969-ae67-ed7ac727ae44 ==============================
+[0m23:19:50.231209 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m23:19:50.231601 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --select mart+', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'introspect': 'True', 'write_json': 'True', 'target_path': 'None', 'profiles_dir': '/home/sneha/.dbt', 'no_print': 'None', 'printer_width': '80', 'quiet': 'False', 'cache_selected_only': 'False', 'empty': 'False', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'version_check': 'True', 'partial_parse': 'True', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'use_experimental_parser': 'False', 'log_cache_events': 'False'}
+[0m23:19:51.598778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '087b0190-de6b-4969-ae67-ed7ac727ae44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f4e79b910>]}
+[0m23:19:51.642788 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '087b0190-de6b-4969-ae67-ed7ac727ae44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f814810f0>]}
+[0m23:19:51.643385 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m23:19:51.775683 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m23:19:51.849883 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:19:51.850225 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:19:51.876371 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '087b0190-de6b-4969-ae67-ed7ac727ae44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f4e3417e0>]}
+[0m23:19:51.930777 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:19:51.932170 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:19:51.939613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '087b0190-de6b-4969-ae67-ed7ac727ae44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f4e3db0d0>]}
+[0m23:19:51.940031 [info ] [MainThread]: Found 4 models, 1 source, 508 macros
+[0m23:19:51.940338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '087b0190-de6b-4969-ae67-ed7ac727ae44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f4e3d9930>]}
+[0m23:19:51.941349 [info ] [MainThread]: 
+[0m23:19:51.941648 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:19:51.941880 [info ] [MainThread]: 
+[0m23:19:51.942225 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:19:51.945255 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:19:51.945796 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:19:53.346831 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_intermediate)
+[0m23:19:53.348207 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:19:53.350819 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418_dbt_sneha_staging'
+[0m23:19:53.352043 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:19:53.353189 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418_dbt_sneha_mart'
+[0m23:19:53.356677 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:19:54.012429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '087b0190-de6b-4969-ae67-ed7ac727ae44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f837035e0>]}
+[0m23:19:54.013630 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:19:54.018813 [debug] [Thread-1 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:19:54.020526 [debug] [Thread-2 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:19:54.022076 [info ] [Thread-1 (]: 1 of 2 START sql table model dbt_sneha_mart.mart_attribution_first_click ....... [RUN]
+[0m23:19:54.023432 [info ] [Thread-2 (]: 2 of 2 START sql table model dbt_sneha_mart.mart_attribution_last_click ........ [RUN]
+[0m23:19:54.024551 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_intermediate, now model.realtime_attribution_dashboard.mart_attribution_first_click)
+[0m23:19:54.025663 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_mart, now model.realtime_attribution_dashboard.mart_attribution_last_click)
+[0m23:19:54.026737 [debug] [Thread-1 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:19:54.027738 [debug] [Thread-2 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:19:54.043597 [debug] [Thread-1 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_first_click"
+[0m23:19:54.048047 [debug] [Thread-1 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:19:54.047134 [debug] [Thread-2 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_last_click"
+[0m23:19:54.056800 [debug] [Thread-2 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:19:54.079705 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:19:54.083304 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:19:54.736826 [debug] [Thread-2 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.mart_attribution_last_click"
+[0m23:19:54.738275 [debug] [Thread-1 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.mart_attribution_first_click"
+[0m23:19:54.738843 [debug] [Thread-1 (]: On model.realtime_attribution_dashboard.mart_attribution_first_click: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.mart_attribution_first_click"} */
+
+  
+    
+
+    create or replace table `assessment-476418`.`dbt_sneha_mart`.`mart_attribution_first_click`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- mart_attribution_first_click.sql
+-- Compute First-Click attribution
+
+SELECT
+  user_id,
+  MIN(event_timestamp) AS first_click_time,
+  ARRAY_AGG(source ORDER BY event_timestamp ASC LIMIT 1)[OFFSET(0)] AS first_source
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+WHERE event_name = 'page_view'
+GROUP BY user_id
+    );
+  
+[0m23:19:54.740139 [debug] [Thread-2 (]: On model.realtime_attribution_dashboard.mart_attribution_last_click: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.mart_attribution_last_click"} */
+
+  
+    
+
+    create or replace table `assessment-476418`.`dbt_sneha_mart`.`mart_attribution_last_click`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- mart_attribution_last_click.sql
+-- Compute Last-Click attribution
+
+SELECT
+  user_id,
+  MAX(event_timestamp) AS last_click_time,
+  ARRAY_AGG(source ORDER BY event_timestamp DESC LIMIT 1)[OFFSET(0)] AS last_source
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+WHERE event_name = 'page_view'
+GROUP BY user_id
+    );
+  
+[0m23:19:55.676839 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:4c67eedd-1660-468b-9343-74255669ffa9&page=queryresults
+[0m23:19:55.682540 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:18059340-9caa-4aba-a5f0-b6c084e896f7&page=queryresults
+[0m23:19:58.220223 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '087b0190-de6b-4969-ae67-ed7ac727ae44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f4e23dab0>]}
+[0m23:19:58.220856 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '087b0190-de6b-4969-ae67-ed7ac727ae44', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f4e23cb50>]}
+[0m23:19:58.221541 [info ] [Thread-1 (]: 1 of 2 OK created sql table model dbt_sneha_mart.mart_attribution_first_click .. [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 4.19s]
+[0m23:19:58.222140 [info ] [Thread-2 (]: 2 of 2 OK created sql table model dbt_sneha_mart.mart_attribution_last_click ... [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 4.19s]
+[0m23:19:58.222664 [debug] [Thread-1 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:19:58.223148 [debug] [Thread-2 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:19:58.224265 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:19:58.224779 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:19:58.225044 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_first_click' was properly closed.
+[0m23:19:58.225281 [debug] [MainThread]: Connection 'list_assessment-476418_dbt_sneha_staging' was properly closed.
+[0m23:19:58.225500 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_last_click' was properly closed.
+[0m23:19:58.225772 [info ] [MainThread]: 
+[0m23:19:58.226038 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 6.28 seconds (6.28s).
+[0m23:19:58.226590 [debug] [MainThread]: Command end result
+[0m23:19:58.241529 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:19:58.243430 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:19:58.250238 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/run_results.json
+[0m23:19:58.250755 [info ] [MainThread]: 
+[0m23:19:58.251260 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:19:58.251686 [info ] [MainThread]: 
+[0m23:19:58.252131 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m23:19:58.253132 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.060762, "process_in_blocks": "0", "process_kernel_time": 0.920856, "process_mem_max_rss": "357832", "process_out_blocks": "2136", "process_user_time": 3.538292}
+[0m23:19:58.253851 [debug] [MainThread]: Command `dbt run` succeeded at 23:19:58.253741 after 8.06 seconds
+[0m23:19:58.254336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f81d9fd30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f4e20e110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737f4e79b910>]}
+[0m23:19:58.254834 [debug] [MainThread]: Flushing usage events
+[0m23:19:59.664178 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:41:47.534693 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fff928bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fff80e0a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fff80e0a00>]}
+
+
+============================== 23:41:47.537742 | 2bdf3783-402c-403e-b465-daddf02a6f33 ==============================
+[0m23:41:47.537742 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m23:41:47.538432 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'target_path': 'None', 'no_print': 'None', 'cache_selected_only': 'False', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'version_check': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'fail_fast': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --select mart+', 'use_experimental_parser': 'False', 'warn_error': 'None', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'static_parser': 'True', 'debug': 'False', 'profiles_dir': '/home/sneha/.dbt', 'use_colors': 'True', 'log_cache_events': 'False', 'introspect': 'True'}
+[0m23:41:48.895176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2bdf3783-402c-403e-b465-daddf02a6f33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ffc5d36260>]}
+[0m23:41:48.936703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2bdf3783-402c-403e-b465-daddf02a6f33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ffc5b3d750>]}
+[0m23:41:48.937207 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m23:41:49.064579 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m23:41:49.135251 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:41:49.135594 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:41:49.160090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2bdf3783-402c-403e-b465-daddf02a6f33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ffc5834100>]}
+[0m23:41:49.210749 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:41:49.211881 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:41:49.218656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2bdf3783-402c-403e-b465-daddf02a6f33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ffc58cee90>]}
+[0m23:41:49.219154 [info ] [MainThread]: Found 4 models, 1 source, 508 macros
+[0m23:41:49.219474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2bdf3783-402c-403e-b465-daddf02a6f33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ffc58cee00>]}
+[0m23:41:49.221009 [info ] [MainThread]: 
+[0m23:41:49.221516 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:41:49.221810 [info ] [MainThread]: 
+[0m23:41:49.222190 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:41:49.225391 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:41:49.226007 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:41:50.405094 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_mart)
+[0m23:41:50.406532 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:41:50.409136 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418_dbt_sneha_staging'
+[0m23:41:50.409906 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:41:50.412685 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418_dbt_sneha_intermediate'
+[0m23:41:50.413569 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:41:51.001259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2bdf3783-402c-403e-b465-daddf02a6f33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fffab0aa10>]}
+[0m23:41:51.002196 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:41:51.006706 [debug] [Thread-1 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:41:51.007988 [debug] [Thread-2 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:41:51.009524 [info ] [Thread-1 (]: 1 of 2 START sql table model dbt_sneha_mart.mart_attribution_first_click ....... [RUN]
+[0m23:41:51.010783 [info ] [Thread-2 (]: 2 of 2 START sql table model dbt_sneha_mart.mart_attribution_last_click ........ [RUN]
+[0m23:41:51.011934 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_mart, now model.realtime_attribution_dashboard.mart_attribution_first_click)
+[0m23:41:51.013181 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_intermediate, now model.realtime_attribution_dashboard.mart_attribution_last_click)
+[0m23:41:51.014276 [debug] [Thread-1 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:41:51.015402 [debug] [Thread-2 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:41:51.031733 [debug] [Thread-1 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_first_click"
+[0m23:41:51.035026 [debug] [Thread-2 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_last_click"
+[0m23:41:51.035942 [debug] [Thread-2 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:41:51.051830 [debug] [Thread-1 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:41:51.052223 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:41:51.054113 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:41:51.624229 [debug] [Thread-2 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.mart_attribution_last_click"
+[0m23:41:51.626010 [debug] [Thread-1 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.mart_attribution_first_click"
+[0m23:41:51.626540 [debug] [Thread-1 (]: On model.realtime_attribution_dashboard.mart_attribution_first_click: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.mart_attribution_first_click"} */
+
+  
+    
+
+    create or replace table `assessment-476418`.`dbt_sneha_mart`.`mart_attribution_first_click`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- mart_attribution_first_click.sql
+-- Compute First-Click attribution
+
+SELECT
+  user_id,
+  MIN(event_timestamp) AS first_click_time,
+  ARRAY_AGG(source ORDER BY event_timestamp ASC LIMIT 1)[OFFSET(0)] AS first_source
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+WHERE event_name = 'page_view'
+GROUP BY user_id
+    );
+  
+[0m23:41:51.627723 [debug] [Thread-2 (]: On model.realtime_attribution_dashboard.mart_attribution_last_click: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.mart_attribution_last_click"} */
+
+  
+    
+
+    create or replace table `assessment-476418`.`dbt_sneha_mart`.`mart_attribution_last_click`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- mart_attribution_last_click.sql
+-- Compute Last-Click attribution
+
+SELECT
+  user_id,
+  MAX(event_timestamp) AS last_click_time,
+  ARRAY_AGG(source ORDER BY event_timestamp DESC LIMIT 1)[OFFSET(0)] AS last_source
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+WHERE event_name = 'page_view'
+GROUP BY user_id
+    );
+  
+[0m23:41:52.500147 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:4b79dedf-2361-43fa-8aef-f0ad583b3890&page=queryresults
+[0m23:41:52.519326 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:4af621ea-3dc8-4623-8217-5bbba1521757&page=queryresults
+[0m23:41:55.289886 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2bdf3783-402c-403e-b465-daddf02a6f33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ffc8b46230>]}
+[0m23:41:55.290548 [info ] [Thread-1 (]: 1 of 2 OK created sql table model dbt_sneha_mart.mart_attribution_first_click .. [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 4.28s]
+[0m23:41:55.291074 [debug] [Thread-1 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:41:56.446131 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2bdf3783-402c-403e-b465-daddf02a6f33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ffc574aef0>]}
+[0m23:41:56.446806 [info ] [Thread-2 (]: 2 of 2 OK created sql table model dbt_sneha_mart.mart_attribution_last_click ... [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 5.43s]
+[0m23:41:56.447285 [debug] [Thread-2 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:41:56.448492 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:41:56.449169 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:41:56.449617 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_first_click' was properly closed.
+[0m23:41:56.449986 [debug] [MainThread]: Connection 'list_assessment-476418_dbt_sneha_staging' was properly closed.
+[0m23:41:56.450339 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_last_click' was properly closed.
+[0m23:41:56.450730 [info ] [MainThread]: 
+[0m23:41:56.451078 [info ] [MainThread]: Finished running 2 table models in 0 hours 0 minutes and 7.23 seconds (7.23s).
+[0m23:41:56.451772 [debug] [MainThread]: Command end result
+[0m23:41:56.473035 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:41:56.474994 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:41:56.482068 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/run_results.json
+[0m23:41:56.482573 [info ] [MainThread]: 
+[0m23:41:56.483089 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:41:56.483517 [info ] [MainThread]: 
+[0m23:41:56.483905 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m23:41:56.484747 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 8.98692, "process_in_blocks": "0", "process_kernel_time": 0.921479, "process_mem_max_rss": "358036", "process_out_blocks": "2136", "process_user_time": 3.464802}
+[0m23:41:56.485260 [debug] [MainThread]: Command `dbt run` succeeded at 23:41:56.485171 after 8.99 seconds
+[0m23:41:56.485627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fff928bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70ffc5d36260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70fff9037130>]}
+[0m23:41:56.486015 [debug] [MainThread]: Flushing usage events
+[0m23:41:57.571118 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:46:17.757968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b803a3d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b7f224a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b7f224a00>]}
+
+
+============================== 23:46:17.759921 | 419e88e0-026f-4ff4-8aca-93e976867a8d ==============================
+[0m23:46:17.759921 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m23:46:17.760338 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'introspect': 'True', 'fail_fast': 'False', 'printer_width': '80', 'quiet': 'False', 'use_colors': 'True', 'profiles_dir': '/home/sneha/.dbt', 'log_cache_events': 'False', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run --select staging+', 'cache_selected_only': 'False', 'empty': 'False', 'static_parser': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'target_path': 'None'}
+[0m23:46:19.157397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '419e88e0-026f-4ff4-8aca-93e976867a8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b4ce3e260>]}
+[0m23:46:19.203452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '419e88e0-026f-4ff4-8aca-93e976867a8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b4cc41750>]}
+[0m23:46:19.204031 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m23:46:19.336088 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m23:46:19.409836 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:46:19.410175 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:46:19.436314 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '419e88e0-026f-4ff4-8aca-93e976867a8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b4c93c100>]}
+[0m23:46:19.491045 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:46:19.492377 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:46:19.499657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '419e88e0-026f-4ff4-8aca-93e976867a8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b4c9d6e90>]}
+[0m23:46:19.500092 [info ] [MainThread]: Found 4 models, 1 source, 508 macros
+[0m23:46:19.500406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '419e88e0-026f-4ff4-8aca-93e976867a8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b4c9d6e00>]}
+[0m23:46:19.501478 [info ] [MainThread]: 
+[0m23:46:19.501791 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:46:19.502037 [info ] [MainThread]: 
+[0m23:46:19.502403 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:46:19.505775 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:46:19.506523 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:46:19.507278 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:46:19.507890 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:46:19.508396 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:46:19.508895 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:46:21.390539 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_mart)
+[0m23:46:21.391743 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:46:21.395586 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_staging)
+[0m23:46:21.396963 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:46:21.398909 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_intermediate)
+[0m23:46:21.402440 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:46:22.069031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '419e88e0-026f-4ff4-8aca-93e976867a8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b4c93f6a0>]}
+[0m23:46:22.070195 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:46:22.075088 [debug] [Thread-1 (]: Began running node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:46:22.076627 [info ] [Thread-1 (]: 1 of 4 START sql view model dbt_sneha_staging.stg_ga4_events ................... [RUN]
+[0m23:46:22.078021 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_staging, now model.realtime_attribution_dashboard.stg_ga4_events)
+[0m23:46:22.078923 [debug] [Thread-1 (]: Began compiling node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:46:22.091567 [debug] [Thread-1 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.stg_ga4_events"
+[0m23:46:22.093439 [debug] [Thread-1 (]: Began executing node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:46:22.129913 [debug] [Thread-1 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.stg_ga4_events"
+[0m23:46:22.130876 [debug] [Thread-1 (]: On model.realtime_attribution_dashboard.stg_ga4_events: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.stg_ga4_events"} */
+
+
+  create or replace view `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+  OPTIONS()
+  as SELECT
+  event_id,
+  user_id,
+  event_name,
+  source,
+  medium,
+  campaign,
+  event_timestamp,
+  DATE(event_timestamp) AS event_date,
+  FORMAT_TIMESTAMP('%H', TIMESTAMP(event_timestamp)) AS event_hour
+FROM `assessment-476418`.`dbt_sneha`.`stg_ga4_events`
+WHERE event_name IS NOT NULL;
+
+
+[0m23:46:22.131526 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:46:23.202851 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:efa35a43-58d3-4812-ba50-35db1d85f50a&page=queryresults
+[0m23:46:24.059959 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '419e88e0-026f-4ff4-8aca-93e976867a8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b4fc4e230>]}
+[0m23:46:24.060591 [info ] [Thread-1 (]: 1 of 4 OK created sql view model dbt_sneha_staging.stg_ga4_events .............. [[32mCREATE VIEW (0 processed)[0m in 1.98s]
+[0m23:46:24.061162 [debug] [Thread-1 (]: Finished running node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:46:24.062465 [debug] [Thread-3 (]: Began running node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:46:24.062908 [info ] [Thread-3 (]: 2 of 4 START sql view model dbt_sneha_intermediate.int_user_sessions ........... [RUN]
+[0m23:46:24.063292 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_mart, now model.realtime_attribution_dashboard.int_user_sessions)
+[0m23:46:24.063660 [debug] [Thread-3 (]: Began compiling node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:46:24.065858 [debug] [Thread-3 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.int_user_sessions"
+[0m23:46:24.066382 [debug] [Thread-4 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:46:24.067173 [debug] [Thread-2 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:46:24.068251 [info ] [Thread-4 (]: 3 of 4 START sql table model dbt_sneha_mart.mart_attribution_first_click ....... [RUN]
+[0m23:46:24.069086 [info ] [Thread-2 (]: 4 of 4 START sql table model dbt_sneha_mart.mart_attribution_last_click ........ [RUN]
+[0m23:46:24.070045 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.realtime_attribution_dashboard.mart_attribution_first_click'
+[0m23:46:24.070700 [debug] [Thread-3 (]: Began executing node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:46:24.071196 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_intermediate, now model.realtime_attribution_dashboard.mart_attribution_last_click)
+[0m23:46:24.071758 [debug] [Thread-4 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:46:24.075108 [debug] [Thread-3 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.int_user_sessions"
+[0m23:46:24.075843 [debug] [Thread-2 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:46:24.079423 [debug] [Thread-4 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_first_click"
+[0m23:46:24.083632 [debug] [Thread-2 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_last_click"
+[0m23:46:24.084473 [debug] [Thread-3 (]: On model.realtime_attribution_dashboard.int_user_sessions: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.int_user_sessions"} */
+
+
+  create or replace view `assessment-476418`.`dbt_sneha_intermediate`.`int_user_sessions`
+  OPTIONS()
+  as -- int_user_sessions.sql
+-- Create user sessions per day
+
+SELECT
+  user_id,
+  event_date,
+  CONCAT(user_id, '_', event_date) AS session_id,
+  COUNT(DISTINCT event_name) AS event_count,
+  MIN(event_timestamp) AS session_start,
+  MAX(event_timestamp) AS session_end
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+GROUP BY 1,2;
+
+
+[0m23:46:24.086043 [debug] [Thread-4 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:46:24.086714 [debug] [Thread-2 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:46:24.087262 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m23:46:24.099352 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m23:46:24.101996 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:46:24.719222 [debug] [Thread-2 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.mart_attribution_last_click"
+[0m23:46:24.719807 [debug] [Thread-2 (]: On model.realtime_attribution_dashboard.mart_attribution_last_click: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.mart_attribution_last_click"} */
+
+  
+    
+
+    create or replace table `assessment-476418`.`dbt_sneha_mart`.`mart_attribution_last_click`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- mart_attribution_last_click.sql
+-- Compute Last-Click attribution
+
+SELECT
+  user_id,
+  MAX(event_timestamp) AS last_click_time,
+  ARRAY_AGG(source ORDER BY event_timestamp DESC LIMIT 1)[OFFSET(0)] AS last_source
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+WHERE event_name = 'page_view'
+GROUP BY user_id
+    );
+  
+[0m23:46:24.770344 [debug] [Thread-4 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.mart_attribution_first_click"
+[0m23:46:24.772106 [debug] [Thread-4 (]: On model.realtime_attribution_dashboard.mart_attribution_first_click: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.mart_attribution_first_click"} */
+
+  
+    
+
+    create or replace table `assessment-476418`.`dbt_sneha_mart`.`mart_attribution_first_click`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- mart_attribution_first_click.sql
+-- Compute First-Click attribution
+
+SELECT
+  user_id,
+  MIN(event_timestamp) AS first_click_time,
+  ARRAY_AGG(source ORDER BY event_timestamp ASC LIMIT 1)[OFFSET(0)] AS first_source
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+WHERE event_name = 'page_view'
+GROUP BY user_id
+    );
+  
+[0m23:46:25.092816 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:69451dbb-f15a-41b6-949d-e2d21e3adf0e&page=queryresults
+[0m23:46:25.634150 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:a508f64c-2860-48da-9c64-9a7a05f8ec01&page=queryresults
+[0m23:46:25.652901 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:e19a6b53-8ea5-4572-bd19-b1f385c75ff4&page=queryresults
+[0m23:46:26.051793 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '419e88e0-026f-4ff4-8aca-93e976867a8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b48bee4a0>]}
+[0m23:46:26.052899 [info ] [Thread-3 (]: 2 of 4 OK created sql view model dbt_sneha_intermediate.int_user_sessions ...... [[32mCREATE VIEW (0 processed)[0m in 1.99s]
+[0m23:46:26.053355 [debug] [Thread-3 (]: Finished running node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:46:27.935873 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '419e88e0-026f-4ff4-8aca-93e976867a8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b4af903a0>]}
+[0m23:46:27.936494 [info ] [Thread-2 (]: 4 of 4 OK created sql table model dbt_sneha_mart.mart_attribution_last_click ... [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 3.86s]
+[0m23:46:27.936951 [debug] [Thread-2 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:46:28.011925 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '419e88e0-026f-4ff4-8aca-93e976867a8d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b4c844370>]}
+[0m23:46:28.012759 [info ] [Thread-4 (]: 3 of 4 OK created sql table model dbt_sneha_mart.mart_attribution_first_click .. [[32mCREATE TABLE (0.0 rows, 0 processed)[0m in 3.94s]
+[0m23:46:28.013396 [debug] [Thread-4 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:46:28.014735 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:46:28.015426 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:46:28.015797 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.stg_ga4_events' was properly closed.
+[0m23:46:28.016132 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_last_click' was properly closed.
+[0m23:46:28.016465 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.int_user_sessions' was properly closed.
+[0m23:46:28.016771 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_first_click' was properly closed.
+[0m23:46:28.017153 [info ] [MainThread]: 
+[0m23:46:28.017511 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 8.51 seconds (8.51s).
+[0m23:46:28.018411 [debug] [MainThread]: Command end result
+[0m23:46:28.041457 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:46:28.043087 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:46:28.049357 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/run_results.json
+[0m23:46:28.049801 [info ] [MainThread]: 
+[0m23:46:28.050275 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:46:28.050625 [info ] [MainThread]: 
+[0m23:46:28.050973 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m23:46:28.055475 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.336246, "process_in_blocks": "0", "process_kernel_time": 0.823678, "process_mem_max_rss": "364968", "process_out_blocks": "2192", "process_user_time": 4.01843}
+[0m23:46:28.056379 [debug] [MainThread]: Command `dbt run` succeeded at 23:46:28.056233 after 10.34 seconds
+[0m23:46:28.056924 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b803a3d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b4ce3e260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787b80157130>]}
+[0m23:46:28.057485 [debug] [MainThread]: Flushing usage events
+[0m23:46:29.376869 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:55:24.194710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c81ffb3dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c81ed6ca60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c81ed6ca00>]}
+
+
+============================== 23:55:24.197726 | aacaadd6-eae6-4f45-b48e-f9f819882f4f ==============================
+[0m23:55:24.197726 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m23:55:24.198415 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': '/home/sneha/.dbt', 'use_colors': 'True', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'partial_parse': 'True', 'log_format': 'default', 'empty': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'warn_error': 'None', 'printer_width': '80', 'version_check': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'invocation_command': 'dbt run --select staging+ mart+', 'use_experimental_parser': 'False', 'debug': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'target_path': 'None'}
+[0m23:55:25.586541 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'aacaadd6-eae6-4f45-b48e-f9f819882f4f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c7ec992470>]}
+[0m23:55:25.632454 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'aacaadd6-eae6-4f45-b48e-f9f819882f4f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c81f5d2a10>]}
+[0m23:55:25.633054 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m23:55:25.765756 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m23:55:25.841616 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:55:25.841972 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:55:25.869339 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'aacaadd6-eae6-4f45-b48e-f9f819882f4f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c7ec48cee0>]}
+[0m23:55:25.925032 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:55:25.926473 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:55:25.933894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'aacaadd6-eae6-4f45-b48e-f9f819882f4f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c7ec32a5c0>]}
+[0m23:55:25.934334 [info ] [MainThread]: Found 4 models, 1 source, 508 macros
+[0m23:55:25.934655 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aacaadd6-eae6-4f45-b48e-f9f819882f4f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c7ec32af50>]}
+[0m23:55:25.935848 [info ] [MainThread]: 
+[0m23:55:25.936163 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m23:55:25.936440 [info ] [MainThread]: 
+[0m23:55:25.936819 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:55:25.940376 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:55:25.940823 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:55:25.941297 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:55:25.942152 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418'
+[0m23:55:25.942778 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:55:25.943615 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:55:27.475465 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_staging)
+[0m23:55:27.477001 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_mart)
+[0m23:55:27.478099 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:55:27.479566 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_assessment-476418, now list_assessment-476418_dbt_sneha_intermediate)
+[0m23:55:27.480964 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:55:27.483995 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:55:28.150790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'aacaadd6-eae6-4f45-b48e-f9f819882f4f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c7ec48f9a0>]}
+[0m23:55:28.151798 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:55:28.156263 [debug] [Thread-1 (]: Began running node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:55:28.157696 [info ] [Thread-1 (]: 1 of 4 START sql view model dbt_sneha_staging.stg_ga4_events ................... [RUN]
+[0m23:55:28.158926 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_mart, now model.realtime_attribution_dashboard.stg_ga4_events)
+[0m23:55:28.159932 [debug] [Thread-1 (]: Began compiling node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:55:28.170830 [debug] [Thread-1 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.stg_ga4_events"
+[0m23:55:28.171584 [debug] [Thread-1 (]: Began executing node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:55:28.209721 [debug] [Thread-1 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.stg_ga4_events"
+[0m23:55:28.210656 [debug] [Thread-1 (]: On model.realtime_attribution_dashboard.stg_ga4_events: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.stg_ga4_events"} */
+
+
+  create or replace view `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+  OPTIONS()
+  as SELECT
+  event_id,
+  user_id,
+  event_name,
+  source,
+  medium,
+  campaign,
+  event_timestamp,
+  DATE(event_timestamp) AS event_date,
+  FORMAT_TIMESTAMP('%H', TIMESTAMP(event_timestamp)) AS event_hour
+FROM `assessment-476418`.`dbt_sneha`.`stg_ga4_events`
+WHERE event_name IS NOT NULL;
+
+
+[0m23:55:28.211228 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:55:29.779421 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:0f2a0c72-cb4a-4490-9062-761833d0339e&page=queryresults
+[0m23:55:30.702870 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aacaadd6-eae6-4f45-b48e-f9f819882f4f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c7ef7a6230>]}
+[0m23:55:30.703594 [info ] [Thread-1 (]: 1 of 4 OK created sql view model dbt_sneha_staging.stg_ga4_events .............. [[32mCREATE VIEW (0 processed)[0m in 2.54s]
+[0m23:55:30.704091 [debug] [Thread-1 (]: Finished running node model.realtime_attribution_dashboard.stg_ga4_events
+[0m23:55:30.705186 [debug] [Thread-3 (]: Began running node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:55:30.705847 [info ] [Thread-3 (]: 2 of 4 START sql view model dbt_sneha_intermediate.int_user_sessions ........... [RUN]
+[0m23:55:30.706224 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_intermediate, now model.realtime_attribution_dashboard.int_user_sessions)
+[0m23:55:30.706577 [debug] [Thread-3 (]: Began compiling node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:55:30.708835 [debug] [Thread-3 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.int_user_sessions"
+[0m23:55:30.709434 [debug] [Thread-4 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:55:30.710171 [info ] [Thread-4 (]: 3 of 4 START sql table model dbt_sneha_mart.mart_attribution_first_click ....... [RUN]
+[0m23:55:30.711356 [debug] [Thread-4 (]: Acquiring new bigquery connection 'model.realtime_attribution_dashboard.mart_attribution_first_click'
+[0m23:55:30.712030 [debug] [Thread-3 (]: Began executing node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:55:30.712470 [debug] [Thread-2 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:55:30.713117 [debug] [Thread-4 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:55:30.715813 [debug] [Thread-3 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.int_user_sessions"
+[0m23:55:30.716605 [info ] [Thread-2 (]: 4 of 4 START sql table model dbt_sneha_mart.mart_attribution_last_click ........ [RUN]
+[0m23:55:30.720702 [debug] [Thread-4 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_first_click"
+[0m23:55:30.721634 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_staging, now model.realtime_attribution_dashboard.mart_attribution_last_click)
+[0m23:55:30.722318 [debug] [Thread-2 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:55:30.722898 [debug] [Thread-3 (]: On model.realtime_attribution_dashboard.int_user_sessions: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.int_user_sessions"} */
+
+
+  create or replace view `assessment-476418`.`dbt_sneha_intermediate`.`int_user_sessions`
+  OPTIONS()
+  as -- int_user_sessions.sql
+-- Create user sessions per day
+
+SELECT
+  user_id,
+  event_date,
+  CONCAT(user_id, '_', event_date) AS session_id,
+  COUNT(DISTINCT event_name) AS event_count,
+  MIN(event_timestamp) AS session_start,
+  MAX(event_timestamp) AS session_end
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+GROUP BY 1,2;
+
+
+[0m23:55:30.728590 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m23:55:30.727197 [debug] [Thread-2 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_last_click"
+[0m23:55:30.727930 [debug] [Thread-4 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:55:30.735837 [debug] [Thread-2 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:55:30.744196 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m23:55:30.747055 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m23:55:31.370625 [debug] [Thread-4 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.mart_attribution_first_click"
+[0m23:55:31.371448 [debug] [Thread-2 (]: Writing runtime sql for node "model.realtime_attribution_dashboard.mart_attribution_last_click"
+[0m23:55:31.372209 [debug] [Thread-4 (]: On model.realtime_attribution_dashboard.mart_attribution_first_click: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.mart_attribution_first_click"} */
+
+  
+    
+
+    create or replace table `assessment-476418`.`dbt_sneha_mart`.`mart_attribution_first_click`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- mart_attribution_first_click.sql
+-- Compute First-Click attribution
+
+SELECT
+  user_id,
+  MIN(event_timestamp) AS first_click_time,
+  ARRAY_AGG(source ORDER BY event_timestamp ASC LIMIT 1)[OFFSET(0)] AS first_source
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+WHERE event_name = 'page_view'
+GROUP BY user_id
+    );
+  
+[0m23:55:31.373288 [debug] [Thread-2 (]: On model.realtime_attribution_dashboard.mart_attribution_last_click: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "node_id": "model.realtime_attribution_dashboard.mart_attribution_last_click"} */
+
+  
+    
+
+    create or replace table `assessment-476418`.`dbt_sneha_mart`.`mart_attribution_last_click`
+      
+    
+    
+
+    
+    OPTIONS()
+    as (
+      -- mart_attribution_last_click.sql
+-- Compute Last-Click attribution
+
+SELECT
+  user_id,
+  MAX(event_timestamp) AS last_click_time,
+  ARRAY_AGG(source ORDER BY event_timestamp DESC LIMIT 1)[OFFSET(0)] AS last_source
+FROM `assessment-476418`.`dbt_sneha_staging`.`stg_ga4_events`
+WHERE event_name = 'page_view'
+GROUP BY user_id
+    );
+  
+[0m23:55:31.779699 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:a77ab5c7-0fa5-4b9f-94d7-93a4ffa2a7c2&page=queryresults
+[0m23:55:32.326340 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:a3682e88-2b9d-44a2-9431-cccdb3bb05a7&page=queryresults
+[0m23:55:32.733230 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aacaadd6-eae6-4f45-b48e-f9f819882f4f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c7ec398820>]}
+[0m23:55:32.733866 [info ] [Thread-3 (]: 2 of 4 OK created sql view model dbt_sneha_intermediate.int_user_sessions ...... [[32mCREATE VIEW (0 processed)[0m in 2.03s]
+[0m23:55:32.734318 [debug] [Thread-3 (]: Finished running node model.realtime_attribution_dashboard.int_user_sessions
+[0m23:55:32.734987 [debug] [Thread-4 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:7fd086f1-93a1-4a2d-99ef-39bcc669bc8d&page=queryresults
+[0m23:55:34.887391 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aacaadd6-eae6-4f45-b48e-f9f819882f4f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c7ec2e1780>]}
+[0m23:55:34.888652 [info ] [Thread-2 (]: 4 of 4 OK created sql table model dbt_sneha_mart.mart_attribution_last_click ... [[32mCREATE TABLE (4.0 rows, 352.0 Bytes processed)[0m in 4.17s]
+[0m23:55:34.889127 [debug] [Thread-2 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m23:55:35.564215 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'aacaadd6-eae6-4f45-b48e-f9f819882f4f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c7e8650640>]}
+[0m23:55:35.565091 [info ] [Thread-4 (]: 3 of 4 OK created sql table model dbt_sneha_mart.mart_attribution_first_click .. [[32mCREATE TABLE (4.0 rows, 352.0 Bytes processed)[0m in 4.85s]
+[0m23:55:35.565691 [debug] [Thread-4 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m23:55:35.567086 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:55:35.567670 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:55:35.567973 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.int_user_sessions' was properly closed.
+[0m23:55:35.568257 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_last_click' was properly closed.
+[0m23:55:35.568529 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.stg_ga4_events' was properly closed.
+[0m23:55:35.568800 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_first_click' was properly closed.
+[0m23:55:35.569157 [info ] [MainThread]: 
+[0m23:55:35.569524 [info ] [MainThread]: Finished running 2 table models, 2 view models in 0 hours 0 minutes and 9.63 seconds (9.63s).
+[0m23:55:35.570508 [debug] [MainThread]: Command end result
+[0m23:55:35.593566 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m23:55:35.595665 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m23:55:35.603703 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/run_results.json
+[0m23:55:35.604232 [info ] [MainThread]: 
+[0m23:55:35.604817 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:55:35.605288 [info ] [MainThread]: 
+[0m23:55:35.605792 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=4
+[0m23:55:35.610615 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 11.455461, "process_in_blocks": "0", "process_kernel_time": 0.888154, "process_mem_max_rss": "365232", "process_out_blocks": "2192", "process_user_time": 4.148733}
+[0m23:55:35.611512 [debug] [MainThread]: Command `dbt run` succeeded at 23:55:35.611373 after 11.46 seconds
+[0m23:55:35.612052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c81ffb3dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c81f5d2a10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72c81fc73730>]}
+[0m23:55:35.612610 [debug] [MainThread]: Flushing usage events
+[0m23:55:36.945881 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:41:59.460002 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73b75afb7d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73b759d5c1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73b759d5c190>]}
+
+
+============================== 13:41:59.463466 | 7ee12e3c-cfa2-4e29-b7e1-25f13c8b73d6 ==============================
+[0m13:41:59.463466 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m13:41:59.463871 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'use_colors': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'empty': 'None', 'introspect': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'fail_fast': 'False', 'no_print': 'None', 'write_json': 'True', 'profiles_dir': '/home/sneha/.dbt', 'static_parser': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'warn_error': 'None', 'debug': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'invocation_command': 'dbt debug', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'quiet': 'False'}
+[0m13:41:59.473299 [info ] [MainThread]: dbt version: 1.11.0-b3
+[0m13:41:59.473690 [info ] [MainThread]: python version: 3.10.12
+[0m13:41:59.473952 [info ] [MainThread]: python path: /usr/bin/python3
+[0m13:41:59.474188 [info ] [MainThread]: os info: Linux-6.8.0-85-generic-x86_64-with-glibc2.35
+[0m13:42:01.059559 [info ] [MainThread]: Using profiles dir at /home/sneha/.dbt
+[0m13:42:01.059982 [info ] [MainThread]: Using profiles.yml file at /home/sneha/.dbt/profiles.yml
+[0m13:42:01.060254 [info ] [MainThread]: Using dbt_project.yml file at /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/dbt_project.yml
+[0m13:42:01.060582 [info ] [MainThread]: adapter type: bigquery
+[0m13:42:01.060794 [info ] [MainThread]: adapter version: 1.10.2
+[0m13:42:01.140904 [info ] [MainThread]: Configuration:
+[0m13:42:01.141312 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:42:01.141555 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:42:01.141765 [info ] [MainThread]: Required dependencies:
+[0m13:42:01.141991 [debug] [MainThread]: Executing "git --help"
+[0m13:42:01.143697 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:42:01.144023 [debug] [MainThread]: STDERR: "b''"
+[0m13:42:01.144267 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:42:01.144499 [info ] [MainThread]: Connection:
+[0m13:42:01.144733 [info ] [MainThread]:   method: oauth
+[0m13:42:01.144938 [info ] [MainThread]:   database: assessment-476418
+[0m13:42:01.145139 [info ] [MainThread]:   execution_project: assessment-476418
+[0m13:42:01.145346 [info ] [MainThread]:   schema: dbt_sneha
+[0m13:42:01.145549 [info ] [MainThread]:   location: US
+[0m13:42:01.145743 [info ] [MainThread]:   priority: interactive
+[0m13:42:01.145933 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m13:42:01.146123 [info ] [MainThread]:   impersonate_service_account: None
+[0m13:42:01.146319 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m13:42:01.146527 [info ] [MainThread]:   job_retries: 1
+[0m13:42:01.146745 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m13:42:01.146957 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m13:42:01.147189 [info ] [MainThread]:   timeout_seconds: 300
+[0m13:42:01.147429 [info ] [MainThread]:   client_id: None
+[0m13:42:01.147648 [info ] [MainThread]:   token_uri: None
+[0m13:42:01.147879 [info ] [MainThread]:   compute_region: None
+[0m13:42:01.148099 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m13:42:01.148320 [info ] [MainThread]:   gcs_bucket: None
+[0m13:42:01.148532 [info ] [MainThread]:   dataproc_batch: None
+[0m13:42:01.148884 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m13:42:01.308599 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m13:42:01.309017 [debug] [MainThread]: On debug: select 1 as id
+[0m13:42:01.309327 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:42:03.041007 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:923aa666-3866-4ee0-a244-e436defe9aae&page=queryresults
+[0m13:42:04.163884 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:42:04.164784 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:42:04.165824 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 4.7523937, "process_in_blocks": "111792", "process_kernel_time": 0.947857, "process_mem_max_rss": "346636", "process_out_blocks": "24", "process_user_time": 2.814422}
+[0m13:42:04.166524 [debug] [MainThread]: Command `dbt debug` succeeded at 13:42:04.166388 after 4.75 seconds
+[0m13:42:04.166943 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:42:04.167587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73b75afb7d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73b75ac8c550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73b727851060>]}
+[0m13:42:04.167960 [debug] [MainThread]: Flushing usage events
+[0m13:42:05.432206 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:42:06.804451 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d63f6b7d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d63e468bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d63e468b50>]}
+
+
+============================== 13:42:06.806365 | f826f8c3-3761-4856-9a53-8e8894e6270d ==============================
+[0m13:42:06.806365 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m13:42:06.806729 [debug] [MainThread]: running dbt with arguments {'target_path': 'None', 'indirect_selection': 'eager', 'write_json': 'True', 'use_colors': 'True', 'invocation_command': 'dbt test', 'static_parser': 'True', 'debug': 'False', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'None', 'printer_width': '80', 'use_experimental_parser': 'False', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'fail_fast': 'False', 'version_check': 'True', 'partial_parse': 'True', 'log_cache_events': 'False', 'quiet': 'False', 'cache_selected_only': 'False', 'introspect': 'True', 'profiles_dir': '/home/sneha/.dbt', 'no_print': 'None', 'warn_error': 'None'}
+[0m13:42:08.151935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f826f8c3-3761-4856-9a53-8e8894e6270d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d60c0a1300>]}
+[0m13:42:08.195172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f826f8c3-3761-4856-9a53-8e8894e6270d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d63e435060>]}
+[0m13:42:08.195707 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m13:42:08.329866 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m13:42:08.414943 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 4 files changed.
+[0m13:42:08.415634 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/mart/mart_attribution_first_click.sql
+[0m13:42:08.415989 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/mart/mart_attribution_last_click.sql
+[0m13:42:08.416325 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/intermediate/int_user_sessions.sql
+[0m13:42:08.416650 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/staging/stg_ga4_events.sql
+[0m13:42:08.554135 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.realtime_attribution_dashboard.stg_ga4_events' (models/staging/stg_ga4_events.sql) depends on a source named 'dbt_sneha_staging.raw_events' which was not found
+[0m13:42:08.554907 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 1.788415, "process_in_blocks": "3512", "process_kernel_time": 0.964738, "process_mem_max_rss": "347732", "process_out_blocks": "8", "process_user_time": 2.764249}
+[0m13:42:08.555387 [debug] [MainThread]: Command `dbt test` failed at 13:42:08.555317 after 1.79 seconds
+[0m13:42:08.555709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d63f6b7d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d6401c3ac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70d60bac8dc0>]}
+[0m13:42:08.555998 [debug] [MainThread]: Flushing usage events
+[0m13:42:09.498558 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:42:10.875640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x731cf27a7d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x731cf155c220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x731cf155c1c0>]}
+
+
+============================== 13:42:10.878655 | 3443aea5-bffc-43a6-ac5c-9fab9f42970a ==============================
+[0m13:42:10.878655 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m13:42:10.879339 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'write_json': 'True', 'printer_width': '80', 'quiet': 'False', 'profiles_dir': '/home/sneha/.dbt', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'cache_selected_only': 'False', 'debug': 'False', 'warn_error': 'None', 'target_path': 'None', 'version_check': 'True', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'empty': 'None', 'invocation_command': 'dbt docs generate', 'no_print': 'None', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'log_format': 'default', 'fail_fast': 'False', 'static_parser': 'True'}
+[0m13:42:12.250810 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3443aea5-bffc-43a6-ac5c-9fab9f42970a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x731cbf176ad0>]}
+[0m13:42:12.292400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3443aea5-bffc-43a6-ac5c-9fab9f42970a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x731cc1f8e230>]}
+[0m13:42:12.292918 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m13:42:12.414951 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m13:42:12.487957 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 4 files changed.
+[0m13:42:12.488449 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/staging/stg_ga4_events.sql
+[0m13:42:12.488817 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/intermediate/int_user_sessions.sql
+[0m13:42:12.489134 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/mart/mart_attribution_last_click.sql
+[0m13:42:12.489450 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/mart/mart_attribution_first_click.sql
+[0m13:42:12.623059 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.realtime_attribution_dashboard.stg_ga4_events' (models/staging/stg_ga4_events.sql) depends on a source named 'dbt_sneha_staging.raw_events' which was not found
+[0m13:42:12.623863 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 1.7852628, "process_in_blocks": "0", "process_kernel_time": 0.883156, "process_mem_max_rss": "347960", "process_out_blocks": "16", "process_user_time": 2.875764}
+[0m13:42:12.624390 [debug] [MainThread]: Command `dbt docs generate` failed at 13:42:12.624314 after 1.79 seconds
+[0m13:42:12.624709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x731cf27a7d60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x731cbeb988b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x731cbeb80190>]}
+[0m13:42:12.625017 [debug] [MainThread]: Flushing usage events
+[0m13:42:13.629669 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:51:29.702858 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc331b3ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc32028280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc32028220>]}
+
+
+============================== 13:51:29.705893 | 91c5e950-473f-40e2-be34-5f1260af38ff ==============================
+[0m13:51:29.705893 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m13:51:29.706579 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'use_colors': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'warn_error': 'None', 'static_parser': 'True', 'log_cache_events': 'False', 'write_json': 'True', 'empty': 'None', 'introspect': 'True', 'profiles_dir': '/home/sneha/.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_format': 'default', 'no_print': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt docs generate', 'cache_selected_only': 'False'}
+[0m13:51:31.073445 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '91c5e950-473f-40e2-be34-5f1260af38ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbffd468c0>]}
+[0m13:51:31.117295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '91c5e950-473f-40e2-be34-5f1260af38ff', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc32f54eb0>]}
+[0m13:51:31.117875 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m13:51:31.250439 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m13:51:31.325474 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 5 files changed.
+[0m13:51:31.326181 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/staging/staging_sources.yml
+[0m13:51:31.326552 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/mart/mart_attribution_first_click.sql
+[0m13:51:31.326833 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/intermediate/int_user_sessions.sql
+[0m13:51:31.327101 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/mart/mart_attribution_last_click.sql
+[0m13:51:31.327382 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/staging/stg_ga4_events.sql
+[0m13:51:31.539646 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.realtime_attribution_dashboard.mart_attribution_first_click' (models/mart/mart_attribution_first_click.sql) depends on a node named 'int_user_events' which was not found
+[0m13:51:31.540562 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": false, "command_wall_clock_time": 1.8774096, "process_in_blocks": "0", "process_kernel_time": 0.878098, "process_mem_max_rss": "350316", "process_out_blocks": "16", "process_user_time": 2.981728}
+[0m13:51:31.541127 [debug] [MainThread]: Command `dbt docs generate` failed at 13:51:31.541049 after 1.88 seconds
+[0m13:51:31.541453 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdc331b3ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbff68c610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdbff68ecb0>]}
+[0m13:51:31.541778 [debug] [MainThread]: Flushing usage events
+[0m13:51:32.516632 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:53:41.114255 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf60bf6fd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf60adbc220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf60adbc1c0>]}
+
+
+============================== 13:53:41.116114 | 79ff8e56-ea6f-44f9-9ca5-11adaaf53b5b ==============================
+[0m13:53:41.116114 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m13:53:41.116536 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'use_colors': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'warn_error': 'None', 'write_json': 'True', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'printer_width': '80', 'invocation_command': 'dbt docs generate', 'quiet': 'False', 'introspect': 'True', 'target_path': 'None', 'profiles_dir': '/home/sneha/.dbt', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'no_print': 'None', 'version_check': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'empty': 'None', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False'}
+[0m13:53:42.489080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '79ff8e56-ea6f-44f9-9ca5-11adaaf53b5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf5d8932ad0>]}
+[0m13:53:42.533819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '79ff8e56-ea6f-44f9-9ca5-11adaaf53b5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf5db74a230>]}
+[0m13:53:42.534388 [info ] [MainThread]: Registered adapter: bigquery=1.10.2
+[0m13:53:42.661594 [debug] [MainThread]: checksum: e63134dccc1251cfb572caf0e4aa952f030c125ee3634f3bf2c0a2e1bb6ae349, vars: {}, profile: , target: , version: 1.11.0b3
+[0m13:53:42.739155 [debug] [MainThread]: Partial parsing enabled: 1 files deleted, 1 files added, 4 files changed.
+[0m13:53:42.739652 [debug] [MainThread]: Partial parsing: added file: realtime_attribution_dashboard://models/intermediate/int_user_events.sql
+[0m13:53:42.740136 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/staging/staging_sources.yml
+[0m13:53:42.740405 [debug] [MainThread]: Partial parsing: deleted file: realtime_attribution_dashboard://models/intermediate/int_user_sessions.sql
+[0m13:53:42.740682 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/mart/mart_attribution_first_click.sql
+[0m13:53:42.740941 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/staging/stg_ga4_events.sql
+[0m13:53:42.741212 [debug] [MainThread]: Partial parsing: updated file: realtime_attribution_dashboard://models/mart/mart_attribution_last_click.sql
+[0m13:53:43.011835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '79ff8e56-ea6f-44f9-9ca5-11adaaf53b5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf5d689c130>]}
+[0m13:53:43.020684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '79ff8e56-ea6f-44f9-9ca5-11adaaf53b5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf5d84970d0>]}
+[0m13:53:43.021084 [info ] [MainThread]: Found 4 models, 1 source, 508 macros
+[0m13:53:43.021359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79ff8e56-ea6f-44f9-9ca5-11adaaf53b5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf60b600970>]}
+[0m13:53:43.022527 [info ] [MainThread]: 
+[0m13:53:43.022830 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m13:53:43.023106 [info ] [MainThread]: 
+[0m13:53:43.023515 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m13:53:43.026678 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418_dbt_sneha_intermediate'
+[0m13:53:43.027417 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418_dbt_sneha_mart'
+[0m13:53:43.028209 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_assessment-476418_dbt_sneha_staging'
+[0m13:53:43.028754 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:43.029434 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:43.029876 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:44.499470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79ff8e56-ea6f-44f9-9ca5-11adaaf53b5b', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf5d89304c0>]}
+[0m13:53:44.499993 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:53:44.514942 [debug] [Thread-1 (]: Began running node model.realtime_attribution_dashboard.stg_ga4_events
+[0m13:53:44.516362 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_intermediate, now model.realtime_attribution_dashboard.stg_ga4_events)
+[0m13:53:44.517489 [debug] [Thread-1 (]: Began compiling node model.realtime_attribution_dashboard.stg_ga4_events
+[0m13:53:44.527110 [debug] [Thread-1 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.stg_ga4_events"
+[0m13:53:44.527607 [debug] [Thread-1 (]: Began executing node model.realtime_attribution_dashboard.stg_ga4_events
+[0m13:53:44.527911 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:53:44.528608 [debug] [Thread-1 (]: Finished running node model.realtime_attribution_dashboard.stg_ga4_events
+[0m13:53:44.530242 [debug] [Thread-3 (]: Began running node model.realtime_attribution_dashboard.int_user_events
+[0m13:53:44.530739 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_mart, now model.realtime_attribution_dashboard.int_user_events)
+[0m13:53:44.531063 [debug] [Thread-3 (]: Began compiling node model.realtime_attribution_dashboard.int_user_events
+[0m13:53:44.532908 [debug] [Thread-3 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.int_user_events"
+[0m13:53:44.533302 [debug] [Thread-3 (]: Began executing node model.realtime_attribution_dashboard.int_user_events
+[0m13:53:44.533584 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m13:53:44.534207 [debug] [Thread-3 (]: Finished running node model.realtime_attribution_dashboard.int_user_events
+[0m13:53:44.534907 [debug] [Thread-2 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m13:53:44.535496 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_assessment-476418_dbt_sneha_staging, now model.realtime_attribution_dashboard.mart_attribution_first_click)
+[0m13:53:44.536148 [debug] [Thread-1 (]: Began running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m13:53:44.536789 [debug] [Thread-2 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m13:53:44.537370 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.realtime_attribution_dashboard.stg_ga4_events, now model.realtime_attribution_dashboard.mart_attribution_last_click)
+[0m13:53:44.540343 [debug] [Thread-2 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_first_click"
+[0m13:53:44.540772 [debug] [Thread-1 (]: Began compiling node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m13:53:44.542779 [debug] [Thread-1 (]: Writing injected SQL for node "model.realtime_attribution_dashboard.mart_attribution_last_click"
+[0m13:53:44.543209 [debug] [Thread-1 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m13:53:44.543537 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:53:44.544163 [debug] [Thread-1 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_last_click
+[0m13:53:44.544519 [debug] [Thread-2 (]: Began executing node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m13:53:44.544826 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m13:53:44.545525 [debug] [Thread-2 (]: Finished running node model.realtime_attribution_dashboard.mart_attribution_first_click
+[0m13:53:44.546406 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:53:44.546680 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_last_click' was properly closed.
+[0m13:53:44.546904 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.int_user_events' was properly closed.
+[0m13:53:44.547119 [debug] [MainThread]: Connection 'model.realtime_attribution_dashboard.mart_attribution_first_click' was properly closed.
+[0m13:53:44.547754 [debug] [MainThread]: Command end result
+[0m13:53:44.595220 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m13:53:44.596699 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m13:53:44.601394 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/run_results.json
+[0m13:53:44.609122 [debug] [MainThread]: Acquiring new bigquery connection 'generate_catalog'
+[0m13:53:44.609420 [info ] [MainThread]: Building catalog
+[0m13:53:44.613252 [debug] [ThreadPool]: Acquiring new bigquery connection 'assessment-476418.information_schema'
+[0m13:53:44.630053 [debug] [ThreadPool]: Acquiring new bigquery connection 'assessment-476418.information_schema'
+[0m13:53:44.640149 [debug] [ThreadPool]: On assessment-476418.information_schema: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "connection_name": "assessment-476418.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `assessment-476418`.`dbt_sneha_staging`.__TABLES__ tables
+    left join `assessment-476418`.`dbt_sneha_staging`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `assessment-476418`.`dbt_sneha_staging`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('dbt_sneha_staging')
+                            and upper(table_name) = upper('raw_events')
+                            ) or (
+                                upper(table_schema) = upper('dbt_sneha_staging')
+                            and upper(table_name) = upper('stg_ga4_events')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `assessment-476418`.`dbt_sneha_staging`.INFORMATION_SCHEMA.COLUMNS columns
+    join `assessment-476418`.`dbt_sneha_staging`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m13:53:44.642750 [debug] [ThreadPool]: On assessment-476418.information_schema: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "connection_name": "assessment-476418.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `assessment-476418`.`dbt_sneha_mart`.__TABLES__ tables
+    left join `assessment-476418`.`dbt_sneha_mart`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `assessment-476418`.`dbt_sneha_mart`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('dbt_sneha_mart')
+                            and upper(table_name) = upper('mart_attribution_first_click')
+                            ) or (
+                                upper(table_schema) = upper('dbt_sneha_mart')
+                            and upper(table_name) = upper('mart_attribution_last_click')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `assessment-476418`.`dbt_sneha_mart`.INFORMATION_SCHEMA.COLUMNS columns
+    join `assessment-476418`.`dbt_sneha_mart`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m13:53:44.643642 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:44.644428 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:44.644994 [debug] [ThreadPool]: Acquiring new bigquery connection 'assessment-476418.information_schema'
+[0m13:53:44.655640 [debug] [ThreadPool]: On assessment-476418.information_schema: /* {"app": "dbt", "dbt_version": "1.11.0b3", "profile_name": "realtime_attribution", "target_name": "dev", "connection_name": "assessment-476418.information_schema"} */
+
+    with
+                table_shards_stage as (
+    select
+        tables.project_id as table_catalog,
+        tables.dataset_id as table_schema,
+        coalesce(REGEXP_EXTRACT(tables.table_id, '^(.+)[0-9]{8}$'), tables.table_id) as table_name,
+        tables.table_id as shard_name,
+        REGEXP_EXTRACT(tables.table_id, '^.+([0-9]{8})$') as shard_index,
+        REGEXP_CONTAINS(tables.table_id, '^.+[0-9]{8}$') and tables.type = 1 as is_date_shard,
+        case
+            when materialized_views.table_name is not null then 'materialized view'
+            when tables.type = 1 then 'table'
+            when tables.type = 2 then 'view'
+            else 'external'
+        end as table_type,
+        tables.type = 1 as is_table,
+        JSON_VALUE(table_description.option_value) as table_comment,
+        tables.size_bytes,
+        tables.row_count
+    from `assessment-476418`.`dbt_sneha_intermediate`.__TABLES__ tables
+    left join `assessment-476418`.`dbt_sneha_intermediate`.INFORMATION_SCHEMA.MATERIALIZED_VIEWS materialized_views
+        on materialized_views.table_catalog = tables.project_id
+        and materialized_views.table_schema = tables.dataset_id
+        and materialized_views.table_name = tables.table_id
+    left join `assessment-476418`.`dbt_sneha_intermediate`.INFORMATION_SCHEMA.TABLE_OPTIONS table_description
+        on table_description.table_catalog = tables.project_id
+        and table_description.table_schema = tables.dataset_id
+        and table_description.table_name = tables.table_id
+        and table_description.option_name = 'description'
+),
+                table_shards as (
+                    select * from table_shards_stage
+                    where ((
+                                upper(table_schema) = upper('dbt_sneha_intermediate')
+                            and upper(table_name) = upper('int_user_events')
+                            ))
+                ),
+                tables as (
+    select distinct
+        table_catalog,
+        table_schema,
+        table_name,
+        is_date_shard,
+        table_type,
+        is_table,
+        table_comment
+    from table_shards
+),
+                table_stats as (
+    select
+        table_catalog,
+        table_schema,
+        table_name,
+        max(shard_name) as latest_shard_name,
+        min(shard_index) as shard_min,
+        max(shard_index) as shard_max,
+        count(shard_index) as shard_count,
+        sum(size_bytes) as size_bytes,
+        sum(row_count) as row_count
+    from table_shards
+    group by 1, 2, 3
+),
+
+                columns as (
+    select
+        columns.table_catalog,
+        columns.table_schema,
+        columns.table_name as shard_name,
+        coalesce(paths.field_path, '<unknown>') as column_name,
+        -- invent a row number to account for nested fields
+        -- BQ does not treat these nested properties as independent fields
+        row_number() over (
+            partition by
+                columns.table_catalog,
+                columns.table_schema,
+                columns.table_name
+            order by
+                columns.ordinal_position,
+                paths.field_path
+        ) as column_index,
+        coalesce(paths.data_type, '<unknown>') as column_type,
+        paths.description as column_comment,
+        case when columns.is_partitioning_column = 'YES' then 1 else 0 end as is_partitioning_column,
+        case when columns.is_partitioning_column = 'YES' then paths.field_path end as partition_column,
+        case when columns.clustering_ordinal_position is not null then 1 else 0 end as is_clustering_column,
+        case when columns.clustering_ordinal_position is not null then paths.field_path end as cluster_column,
+        columns.clustering_ordinal_position
+    from `assessment-476418`.`dbt_sneha_intermediate`.INFORMATION_SCHEMA.COLUMNS columns
+    join `assessment-476418`.`dbt_sneha_intermediate`.INFORMATION_SCHEMA.COLUMN_FIELD_PATHS paths
+        on paths.table_catalog = columns.table_catalog
+        and paths.table_schema = columns.table_schema
+        and paths.table_name = columns.table_name
+        and paths.column_name = columns.column_name
+    where columns.ordinal_position is not null
+),
+                column_stats as (
+    select
+        table_catalog,
+        table_schema,
+        shard_name,
+        max(is_partitioning_column) = 1 as is_partitioned,
+        max(partition_column) as partition_column,
+        max(is_clustering_column) = 1 as is_clustered,
+        array_to_string(
+            array_agg(
+                cluster_column ignore nulls
+                order by clustering_ordinal_position
+            ), ', '
+        ) as clustering_columns
+    from columns
+    group by 1, 2, 3
+)
+
+            
+    select
+        tables.table_catalog as table_database,
+        tables.table_schema,
+        case
+            when tables.is_date_shard then concat(tables.table_name, '*')
+            else tables.table_name
+        end as table_name,
+        tables.table_type,
+        tables.table_comment,
+        -- coalesce column metadata fields to ensure they are non-null for catalog generation
+        -- external table columns are not present in COLUMN_FIELD_PATHS
+        coalesce(columns.column_name, '<unknown>') as column_name,
+        coalesce(columns.column_index, 1) as column_index,
+        coalesce(columns.column_type, '<unknown>') as column_type,
+        coalesce(columns.column_comment, '') as column_comment,
+
+        'Shard count' as `stats__date_shards__label`,
+        table_stats.shard_count as `stats__date_shards__value`,
+        'The number of date shards in this table' as `stats__date_shards__description`,
+        tables.is_date_shard as `stats__date_shards__include`,
+
+        'Shard (min)' as `stats__date_shard_min__label`,
+        table_stats.shard_min as `stats__date_shard_min__value`,
+        'The first date shard in this table' as `stats__date_shard_min__description`,
+        tables.is_date_shard as `stats__date_shard_min__include`,
+
+        'Shard (max)' as `stats__date_shard_max__label`,
+        table_stats.shard_max as `stats__date_shard_max__value`,
+        'The last date shard in this table' as `stats__date_shard_max__description`,
+        tables.is_date_shard as `stats__date_shard_max__include`,
+
+        '# Rows' as `stats__num_rows__label`,
+        table_stats.row_count as `stats__num_rows__value`,
+        'Approximate count of rows in this table' as `stats__num_rows__description`,
+        tables.is_table as `stats__num_rows__include`,
+
+        'Approximate Size' as `stats__num_bytes__label`,
+        table_stats.size_bytes as `stats__num_bytes__value`,
+        'Approximate size of table as reported by BigQuery' as `stats__num_bytes__description`,
+        tables.is_table as `stats__num_bytes__include`,
+
+        'Partitioned By' as `stats__partitioning_type__label`,
+        column_stats.partition_column as `stats__partitioning_type__value`,
+        'The partitioning column for this table' as `stats__partitioning_type__description`,
+        column_stats.is_partitioned as `stats__partitioning_type__include`,
+
+        'Clustered By' as `stats__clustering_fields__label`,
+        column_stats.clustering_columns as `stats__clustering_fields__value`,
+        'The clustering columns for this table' as `stats__clustering_fields__description`,
+        column_stats.is_clustered as `stats__clustering_fields__include`
+
+    from tables
+    join table_stats
+        on table_stats.table_catalog = tables.table_catalog
+        and table_stats.table_schema = tables.table_schema
+        and table_stats.table_name = tables.table_name
+    left join column_stats
+        on column_stats.table_catalog = tables.table_catalog
+        and column_stats.table_schema = tables.table_schema
+        and column_stats.shard_name = table_stats.latest_shard_name
+    left join columns
+        on columns.table_catalog = tables.table_catalog
+        and columns.table_schema = tables.table_schema
+        and columns.shard_name = table_stats.latest_shard_name
+
+  
+[0m13:53:44.656545 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:53:45.537500 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:262ffc65-38b8-4f52-8264-a8ea51dacaae&page=queryresults
+[0m13:53:45.542467 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:a1820a30-485b-457b-a742-b12dea1c9f8e&page=queryresults
+[0m13:53:45.583507 [debug] [ThreadPool]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=assessment-476418&j=bq:US:70d6e25b-3fb3-4194-8c5b-c1ddb3717851&page=queryresults
+[0m13:53:48.108779 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:53:48.124494 [debug] [MainThread]: Wrote artifact CatalogArtifact to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/catalog.json
+[0m13:53:48.260541 [debug] [MainThread]: Wrote artifact WritableManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/manifest.json
+[0m13:53:48.261694 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/semantic_manifest.json
+[0m13:53:48.261970 [info ] [MainThread]: Catalog written to /home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/target/catalog.json
+[0m13:53:48.262639 [debug] [MainThread]: Resource report: {"command_name": "generate", "command_success": true, "command_wall_clock_time": 7.1852984, "process_in_blocks": "3736", "process_kernel_time": 0.888355, "process_mem_max_rss": "369096", "process_out_blocks": "6592", "process_user_time": 4.055754}
+[0m13:53:48.263104 [debug] [MainThread]: Command `dbt docs generate` succeeded at 13:53:48.263036 after 7.19 seconds
+[0m13:53:48.263368 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m13:53:48.263611 [debug] [MainThread]: Connection 'assessment-476418.information_schema' was properly closed.
+[0m13:53:48.263828 [debug] [MainThread]: Connection 'assessment-476418.information_schema' was properly closed.
+[0m13:53:48.264040 [debug] [MainThread]: Connection 'assessment-476418.information_schema' was properly closed.
+[0m13:53:48.264298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf60bf6fd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf60c1d6380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf60b4db9d0>]}
+[0m13:53:48.264590 [debug] [MainThread]: Flushing usage events
+[0m13:53:49.330330 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:54:48.703994 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ac9ff1a7d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ac9fdf54220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ac9fdf541c0>]}
+
+
+============================== 13:54:48.707043 | 2d3a8043-552f-4dcf-b8c8-64a411e74df0 ==============================
+[0m13:54:48.707043 [info ] [MainThread]: Running with dbt=1.11.0-b3
+[0m13:54:48.707748 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'target_path': 'None', 'quiet': 'False', 'log_path': '/home/sneha/Desktop/realtime-attribution-dashboard/dbt_project/logs', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'printer_width': '80', 'fail_fast': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'version_check': 'True', 'warn_error': 'None', 'invocation_command': 'dbt docs serve', 'introspect': 'True', 'write_json': 'True', 'no_print': 'None', 'profiles_dir': '/home/sneha/.dbt', 'static_parser': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True'}
+[0m13:54:50.126192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2d3a8043-552f-4dcf-b8c8-64a411e74df0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aca008fe950>]}
+[0m13:54:50.172977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2d3a8043-552f-4dcf-b8c8-64a411e74df0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7aca00709660>]}

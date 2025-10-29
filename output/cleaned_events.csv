@@ -1,0 +1,11 @@
+event_id,user_id,event_name,source,medium,campaign,event_timestamp,timestamp,date,hour,session_id
+1,101,page_view,google,cpc,summer_sale,2024-10-20 10:01:00,2024-10-20 10:01:00,2024-10-20,10,101_2024-10-20
+2,101,add_to_cart,google,cpc,summer_sale,2024-10-20 10:03:00,2024-10-20 10:03:00,2024-10-20,10,101_2024-10-20
+3,101,purchase,google,cpc,summer_sale,2024-10-20 10:05:00,2024-10-20 10:05:00,2024-10-20,10,101_2024-10-20
+4,102,page_view,email,newsletter,october_push,2024-10-21 09:10:00,2024-10-21 09:10:00,2024-10-21,9,102_2024-10-21
+5,102,add_to_cart,email,newsletter,october_push,2024-10-21 09:15:00,2024-10-21 09:15:00,2024-10-21,9,102_2024-10-21
+6,102,purchase,direct,none,none,2024-10-21 09:30:00,2024-10-21 09:30:00,2024-10-21,9,102_2024-10-21
+7,103,page_view,facebook,paid_social,diwali_offer,2024-10-22 11:00:00,2024-10-22 11:00:00,2024-10-22,11,103_2024-10-22
+8,103,purchase,facebook,paid_social,diwali_offer,2024-10-22 11:20:00,2024-10-22 11:20:00,2024-10-22,11,103_2024-10-22
+9,104,page_view,google,organic,none,2024-10-23 13:05:00,2024-10-23 13:05:00,2024-10-23,13,104_2024-10-23
+10,104,purchase,google,organic,none,2024-10-23 13:45:00,2024-10-23 13:45:00,2024-10-23,13,104_2024-10-23

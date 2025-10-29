@@ -40,3 +40,13 @@ This project simulates a real-time marketing attribution pipeline similar to a G
 ---
 
 ## Example Data Flow
+# Architecture Overview — Real-time Attribution Dashboard
+
+## 1. Objective
+To build a near real-time attribution pipeline that computes **First Click** and **Last Click** metrics from GA4-style event data, using `BigQuery`, `dbt`, and a simple streaming + dashboard setup.
+
+---
+
+## 2. High-Level Architecture
+
+**Flow:**
